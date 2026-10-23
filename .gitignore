@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+dist
+dist-ssr
+
+# Local env files
+*.local
+.env
+.env.*
+
+# Deployment & OS
+.vercel
+.DS_Store
+Thumbs.db
+
+# Temporary extraction directory (original archives preserved in alt/)
+alt/extracted/

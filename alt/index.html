@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAME Kurukshetra 2026 | The Ultimate Collegiate Sports & Cultural Festival</title>
+  
+  <!-- Favicon featuring the Phoenix brand mark -->
+  <link rel="icon" type="image/png" href="assets/phoenix-icon.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Sticky Frosted Glass Capsule Navbar with Events Mega-Menu
+       ========================================================================= -->
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <!-- Brand Logo & Phoenix Identity -->
+      <a href="#hero" class="nav-brand">
+        <img src="assets/phoenix-icon.png" alt="Kurukshetra Phoenix Logo" class="nav-logo-phoenix">
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Kurukshetra<sup>®</sup></span>
+          <span class="nav-brand-subtitle">FLAME UNIVERSITY</span>
+        </div>
+      </a>
+
+      <!-- Center Nav Links with Events Hover Dropdown -->
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link active">Home</a></li>
+        <li><a href="/schedule" class="nav-link">Schedule</a></li>
+        
+        <!-- Events Link with Hover Mega-Menu -->
+        <li class="nav-item">
+          <a href="#event-search" class="nav-link">
+            Events <span class="dropdown-arrow">▼</span>
+          </a>
+
+          <!-- Expanded Mega-Menu -->
+          <div class="nav-mega-menu">
+            <!-- Column 1: Sports Events -->
+            <div class="mega-column">
+              <h4>🏆 Sports Events</h4>
+              <ul class="mega-event-list">
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Football (Turf)</span> <span class="mega-badge badge-live-tag">LIVE</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Basketball</span> <span class="mega-badge badge-popular-tag">HOT</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Lawn Tennis & Padel</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Badminton (Singles/Doubles)</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Cricket T20</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Volleyball</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Track & Athletics</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="sports"><span>Table Tennis</span></a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Cultural Events -->
+            <div class="mega-column">
+              <h4>🎭 Cultural Events</h4>
+              <ul class="mega-event-list">
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Kalakaar Katta</span> <span class="mega-badge badge-popular-tag">FLAGSHIP</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Battle of the Bands</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Step Up (Street Dance)</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Fashion Promenade</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Slam Poetry & Open Mic</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="cultural"><span>Mono Acting & Theater</span></a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Management, Economics (ME) & Flagships -->
+            <div class="mega-column">
+              <h4>💡 ME & Flagships</h4>
+              <ul class="mega-event-list">
+                <li><a href="#event-search" class="mega-event-link" data-category="me"><span>Shark Arena (B-Plan)</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="me"><span>Crisis Simulation</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="me"><span>Wolf of Dalal Street</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="me"><span>Esports Arena (BGMI/Valorant)</span></a></li>
+                <li><a href="#event-search" class="mega-event-link" data-category="me"><span>Chess Grand Prix</span></a></li>
+                <li><a href="#affiliated" class="mega-event-link"><span>Maidaan Championship</span></a></li>
+                <li><a href="#affiliated" class="mega-event-link"><span>50 Days to Kuru</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#affiliated" class="nav-link">Affiliated</a></li>
+        <li><a href="#disciplines" class="nav-link">Experience</a></li>
+        <li><a href="/committee" class="nav-link">Committee</a></li>
+        <li><a href="/album" class="nav-link">Album</a></li>
+        <li><a href="/blog" class="nav-link">Stories</a></li>
+        <li><a href="/faq" class="nav-link">FAQ</a></li>
+        <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+      </ul>
+
+      <!-- Right CTA Action Button -->
+      <div class="nav-actions">
+        <a href="#register" class="btn-pill-white open-reg-modal">Register</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- =========================================================================
+       2. Top Current Matchups Banner (when Live) / Countdown Timer (when Not Live)
+       ========================================================================= -->
+  <div class="top-matchup-banner">
+    <div class="container">
+      <div class="banner-controls-bar">
+        <!-- Live Status Pill -->
+        <div class="banner-status-pill">
+          <span class="pulsing-dot"></span>
+          <span>KURUKSHETRA LIVE ARENA</span>
+        </div>
+
+        <!-- Toggle Switcher to preview Live vs Countdown -->
+        <button class="banner-toggle-btn" id="toggleBannerModeBtn">
+          <span>⏳ Switch to Countdown</span>
+        </button>
+      </div>
+
+      <!-- Live Matchups Horizontally Scrollable Rail -->
+      <div class="matchups-scroll-wrapper">
+        <div class="matchups-rail">
+          <!-- Match 1: Football -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Football • Semi-Final</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> 78' LIVE</span>
+            </div>
+            <div class="matchup-teams">
+              <span>FLAME Lions</span>
+              <span class="matchup-score">2 — 1</span>
+              <span>IIT Bombay</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Turf Arena 1</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Watch Live →</span>
+            </div>
+          </div>
+
+          <!-- Match 2: Basketball -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Basketball • Final</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> Q4 02:14</span>
+            </div>
+            <div class="matchup-teams">
+              <span>Ashoka Knights</span>
+              <span class="matchup-score">68 — 65</span>
+              <span>NMIMS Titans</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Indoor Sports Court</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Live Scoring →</span>
+            </div>
+          </div>
+
+          <!-- Match 3: Tennis -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Lawn Tennis • Men's Singles</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> Set 2</span>
+            </div>
+            <div class="matchup-teams">
+              <span>St. Xavier's</span>
+              <span class="matchup-score">6-4, 3-2</span>
+              <span>BITS Pilani</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Center Court</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Court 2 Stream →</span>
+            </div>
+          </div>
+
+          <!-- Match 4: Cricket -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Cricket T20 • Super 8</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> 16.2 Ov</span>
+            </div>
+            <div class="matchup-teams">
+              <span>FLAME Royals</span>
+              <span class="matchup-score">148/3</span>
+              <span>IIM Ahmedabad</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Cricket Oval</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Over by Over →</span>
+            </div>
+          </div>
+
+          <!-- Match 5: Volleyball -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Volleyball • Women's QF</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> Set 3</span>
+            </div>
+            <div class="matchup-teams">
+              <span>Symbiosis</span>
+              <span class="matchup-score">22 — 20</span>
+              <span>Christ University</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Outdoor Arena</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Match Center →</span>
+            </div>
+          </div>
+
+          <!-- Match 6: Badminton -->
+          <div class="matchup-card">
+            <div class="matchup-header">
+              <span>Badminton • Mixed Doubles</span>
+              <span class="matchup-live-indicator"><span class="pulsing-dot" style="width:6px;height:6px;"></span> Game 2</span>
+            </div>
+            <div class="matchup-teams">
+              <span>IIT Delhi</span>
+              <span class="matchup-score">19 — 17</span>
+              <span>FLAME Warriors</span>
+            </div>
+            <div class="matchup-footer">
+              <span>Badminton Complex</span>
+              <span style="color: var(--color-primary-flame); font-weight:700;">Live Points →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countdown Mode (When Not Live) -->
+      <div class="countdown-mode-container">
+        <div class="countdown-heading">
+          🔥 KURUKSHETRA 2026 KICKS OFF IN
+        </div>
+        <div class="countdown-units-wrapper">
+          <div class="countdown-unit-box">
+            <div class="countdown-num" id="countDays">03</div>
+            <div class="countdown-lbl">Days</div>
+          </div>
+          <div class="countdown-unit-box">
+            <div class="countdown-num" id="countHours">14</div>
+            <div class="countdown-lbl">Hours</div>
+          </div>
+          <div class="countdown-unit-box">
+            <div class="countdown-num" id="countMins">38</div>
+            <div class="countdown-lbl">Minutes</div>
+          </div>
+          <div class="countdown-unit-box">
+            <div class="countdown-num" id="countSecs">52</div>
+            <div class="countdown-lbl">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. Hero Section (Homepage2.png)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <!-- Hero Background Action Media & Overlays -->
+    <div class="hero-bg-media">
+      <img src="assets/hero-player.png" alt="Athletic Action Player" class="hero-player-img">
+      <div class="hero-gradient-overlay"></div>
+      <img src="assets/phoenix-web.png" alt="Fiery Phoenix Brand Emblem" class="hero-phoenix-watermark">
+    </div>
+
+    <div class="hero-container">
+      <!-- Community Avatar Pill Widget (Top-Left of Hero) -->
+      <div class="hero-community-widget">
+        <div class="hero-avatar-stack">
+          <img src="assets/hero-avatars.png" alt="Community Athletes Stack">
+        </div>
+        <p class="hero-avatar-caption">Rise higher. Battle fiercer. Belong to the premier collegiate sports arena.</p>
+      </div>
+
+      <!-- Main Hero Content -->
+      <div class="hero-main-content">
+        <h1 class="hero-title">
+          Play better. Connect<br>
+          deeper. Go further.
+        </h1>
+        <p class="hero-description">
+          Olympic-grade arenas, 30+ championship sports, cultural stages, and a battleground built for collegiate athletes who demand greatness.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#event-search" class="btn-pill-flame">
+            <span>Explore Events</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#register" class="btn-pill-dark open-reg-modal">Register Contingent</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Brand Badge (Bottom-Right) -->
+    <div class="hero-framer-badge">
+      <img src="assets/phoenix-icon.png" alt="Phoenix Mark" style="width: 14px; height: 14px; object-fit: contain;">
+      <span>FLAME KURUKSHETRA 2026</span>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. ROLLING CAROUSEL WITH IMAGES (Infinite Continuous Marquee)
+       ========================================================================= -->
+  <section class="rolling-carousel-section">
+    <div class="carousel-heading-wrap">
+      <span class="section-tag-pill dark">ACTION IN MOTION</span>
+    </div>
+
+    <div class="carousel-track">
+      <!-- Item 1: Tennis Smash -->
+      <div class="carousel-card">
+        <img src="assets/bento-player-serve.png" alt="Overhead Smash Serve">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Center Court</span>
+          <h4 class="carousel-title">Lawn Tennis & Padel Open</h4>
+        </div>
+      </div>
+
+      <!-- Item 2: Motion Sprint -->
+      <div class="carousel-card">
+        <img src="assets/how-it-works-player.png" alt="High Speed Athlete">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Track & Field</span>
+          <h4 class="carousel-title">100m Dash & Sprint Relays</h4>
+        </div>
+      </div>
+
+      <!-- Item 3: Racket Clash -->
+      <div class="carousel-card">
+        <img src="assets/card-racket.png" alt="Court Equipment">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Racket Arenas</span>
+          <h4 class="carousel-title">Badminton & Table Tennis</h4>
+        </div>
+      </div>
+
+      <!-- Item 4: Aerial Court -->
+      <div class="carousel-card">
+        <img src="assets/faq-player.png" alt="Aerial Tennis Action">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Championship Ground</span>
+          <h4 class="carousel-title">Women's Singles Pro Bracket</h4>
+        </div>
+      </div>
+
+      <!-- Item 5: Stadium Stands -->
+      <div class="carousel-card">
+        <img src="assets/bento-court.png" alt="Court Stands">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Arena 1</span>
+          <h4 class="carousel-title">Olympic-Grade Facilities</h4>
+        </div>
+      </div>
+
+      <!-- Item 6: Crowd Cheer -->
+      <div class="carousel-card">
+        <img src="assets/collage-cheer.png" alt="Crowd Cheering">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Kalakaar Katta</span>
+          <h4 class="carousel-title">Acoustic Jam & Night Concert</h4>
+        </div>
+      </div>
+
+      <!-- Item 7: Turf Run -->
+      <div class="carousel-card">
+        <img src="assets/collage-run.png" alt="Athlete on Turf">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Maidaan</span>
+          <h4 class="carousel-title">Inter-Collegiate Football Cup</h4>
+        </div>
+      </div>
+
+      <!-- DUPLICATE TRACK SET FOR SEAMLESS INFINITE LOOP -->
+      <div class="carousel-card">
+        <img src="assets/bento-player-serve.png" alt="Overhead Smash Serve">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Center Court</span>
+          <h4 class="carousel-title">Lawn Tennis & Padel Open</h4>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="assets/how-it-works-player.png" alt="High Speed Athlete">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Track & Field</span>
+          <h4 class="carousel-title">100m Dash & Sprint Relays</h4>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="assets/card-racket.png" alt="Court Equipment">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Racket Arenas</span>
+          <h4 class="carousel-title">Badminton & Table Tennis</h4>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="assets/faq-player.png" alt="Aerial Tennis Action">
+        <div class="carousel-overlay">
+          <span class="carousel-tag">Championship Ground</span>
+          <h4 class="carousel-title">Women's Singles Pro Bracket</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. KURU AFFILIATED EVENTS BANNER (Maidaan, Kalakaar Katta, 50 Days)
+       ========================================================================= -->
+  <section class="affiliated-events-section" id="affiliated">
+    <div class="container">
+      <div class="affiliated-header">
+        <span class="section-tag-pill">THE KURUKSHETRA UNIVERSE</span>
+        <h2 class="affiliated-title">Flagship Affiliated Experiences</h2>
+        <p style="color: var(--text-dark-secondary); font-size: 1.05rem; margin-top: 10px;">
+          Beyond the tournament grounds: explore the signature pillars that define the spirit of FLAME Kurukshetra.
+        </p>
+      </div>
+
+      <div class="affiliated-grid">
+        <!-- Affiliated Event 1: Maidaan -->
+        <div class="affiliated-card">
+          <div class="affiliated-img-wrap">
+            <img src="assets/bento-court.png" alt="Maidaan Sports Arena">
+            <span class="affiliated-badge-floating">FLAGSHIP SPORTS FEST</span>
+          </div>
+          <div class="affiliated-body">
+            <div class="affiliated-tagline">The Proving Ground</div>
+            <h3 class="affiliated-name">MAIDAAN</h3>
+            <p class="affiliated-desc">
+              Western India’s fiercest multi-sport collegiate battleground. 20+ sports disciplines, tournament-grade floodlit turfs, certified national referees, and non-stop championship knockouts.
+            </p>
+            <div class="affiliated-footer-action">
+              <span>Oct 24 — 27, 2026</span>
+              <a href="#event-search" style="color: var(--color-primary-flame);">Explore Sports →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Affiliated Event 2: Kalakaar Katta -->
+        <div class="affiliated-card">
+          <div class="affiliated-img-wrap">
+            <img src="assets/collage-cheer.png" alt="Kalakaar Katta Stage">
+            <span class="affiliated-badge-floating" style="background: var(--color-accent-yellow); color:#000;">CULTURAL & ARTS</span>
+          </div>
+          <div class="affiliated-body">
+            <div class="affiliated-tagline">Soul of the Fest</div>
+            <h3 class="affiliated-name">KALAKAAR KATTA</h3>
+            <p class="affiliated-desc">
+              The vibrant cultural hub where artists, musicians, and performers ignite the night. Open-air amphitheater jams, street theater, battle of the bands, poetry slams, and creative arts.
+            </p>
+            <div class="affiliated-footer-action">
+              <span>Evenings @ Amphitheater</span>
+              <a href="#event-search" style="color: var(--color-primary-flame);">Explore Stages →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Affiliated Event 3: 50 Days to Kuru -->
+        <div class="affiliated-card">
+          <div class="affiliated-img-wrap">
+            <img src="assets/how-it-works-player.png" alt="50 Days Countdown Launch">
+            <span class="affiliated-badge-floating" style="background: var(--color-burnt-orange);">PRE-FEST LAUNCH</span>
+          </div>
+          <div class="affiliated-body">
+            <div class="affiliated-tagline">The Ignition Torch</div>
+            <h3 class="affiliated-name">50 DAYS TO KURU</h3>
+            <p class="affiliated-desc">
+              The high-octane countdown campaign that sets the campus ablaze. Official jersey reveals, inter-hostel turf wars, flashmobs across Pune, torch relay, and anthem unboxings.
+            </p>
+            <div class="affiliated-footer-action">
+              <span>Campus Kickoff Series</span>
+              <a href="#blogs" style="color: var(--color-primary-flame);">View Journey →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. EVENT SEARCH & FILTER ENGINE (Search by Name, Mode, Category)
+       ========================================================================= -->
+  <section class="event-search-section" id="event-search">
+    <div class="container">
+      <div class="search-header-row">
+        <span class="section-tag-pill">DISCOVER & COMPETE</span>
+        <h2 class="search-title">Explore Events & Arenas</h2>
+        <p class="search-subtitle">
+          Search across 30+ championship sports, cultural stages, and management simulations by name, mode, and category.
+        </p>
+      </div>
+
+      <!-- Master Schedule Direct Banner -->
+      <div style="background: linear-gradient(135deg, rgba(254, 90, 0, 0.14) 0%, rgba(15, 18, 25, 0.8) 100%); border: 1px solid rgba(254, 90, 0, 0.35); border-radius: 16px; padding: 18px 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 1.8rem;">📅</span>
+          <div>
+            <h4 style="font-family: var(--font-header-spartan); color: #fff; font-size: 1.15rem; margin-bottom: 2px;">Looking for the Day-Wise Tournament Schedule?</h4>
+            <p style="color: var(--text-dark-secondary); font-size: 0.9rem; margin: 0;">Explore our interactive zero-scroll schedule page with full timetable breakdowns.</p>
+          </div>
+        </div>
+        <a href="../Schedule page/index.html" class="btn-pill-flame" style="white-space: nowrap; padding: 10px 22px; font-size: 0.85rem;">Open Master Schedule →</a>
+      </div>
+
+      <!-- Search & Filters Control Box -->
+      <div class="search-filter-box">
+        <!-- Live Search Input -->
+        <div class="search-input-wrap">
+          <span class="search-icon-btn">🔍</span>
+          <input type="text" id="eventSearchInput" placeholder="Search event by name (e.g. Football, Battle of Bands, Chess, Shark Tank)...">
+        </div>
+
+        <!-- Filter Pills Row -->
+        <div class="filter-pills-row">
+          <!-- Category Filters -->
+          <div class="filter-group">
+            <span class="filter-group-label">Category:</span>
+            <button class="filter-pill cat-filter-pill active" data-category="all">All Events</button>
+            <button class="filter-pill cat-filter-pill" data-category="sports">Sports</button>
+            <button class="filter-pill cat-filter-pill" data-category="cultural">Cultural</button>
+            <button class="filter-pill cat-filter-pill" data-category="me">ME (Mgmt & Econ)</button>
+          </div>
+
+          <!-- Mode Filters -->
+          <div class="filter-group">
+            <span class="filter-group-label">Mode:</span>
+            <button class="filter-pill mode-filter-pill active" data-mode="all">All Modes</button>
+            <button class="filter-pill mode-filter-pill" data-mode="offline">Offline (Campus)</button>
+            <button class="filter-pill mode-filter-pill" data-mode="online">Online / Esports</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Count Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding: 0 4px;">
+        <span id="resultsCountText" style="font-weight: 700; color: var(--text-dark-secondary);">Showing 12 events</span>
+        <span style="font-size: 0.85rem; color: var(--color-primary-flame); font-weight: 600;">Phoenix Championship Trophy Included</span>
+      </div>
+
+      <!-- Events Results Grid -->
+      <div class="events-results-grid" id="eventsResultsContainer">
+        <!-- Event 1: Football -->
+        <div class="event-card-item" data-category="sports" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge">Sports</span>
+            <span class="event-mode-badge">Offline (Turf Arena)</span>
+          </div>
+          <h3 class="event-item-name">Football Championship</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 — 26 • FLAME Main Turf</span>
+            <span>👥 Squad of 11 + 5 rolling substitutes</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹45,000 + Phoenix Cup</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Football">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 2: Basketball -->
+        <div class="event-card-item" data-category="sports" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge">Sports</span>
+            <span class="event-mode-badge">Offline (Indoor Court)</span>
+          </div>
+          <h3 class="event-item-name">Basketball Slam</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 25 — 27 • Indoor Wooden Court</span>
+            <span>👥 5v5 Full-Court (Men & Women)</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹35,000 + Medals</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Basketball">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 3: Lawn Tennis & Padel -->
+        <div class="event-card-item" data-category="sports" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge">Sports</span>
+            <span class="event-mode-badge">Offline (Center Court)</span>
+          </div>
+          <h3 class="event-item-name">Tennis & Padel Open</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 — 26 • Professional Courts</span>
+            <span>👥 Singles & Doubles Knockouts</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹30,000 + Trophies</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Tennis">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 4: Kalakaar Katta Band Battle -->
+        <div class="event-card-item" data-category="cultural" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(245, 138, 44, 0.15); color: var(--color-amber-glow);">Cultural</span>
+            <span class="event-mode-badge">Offline (Amphitheater)</span>
+          </div>
+          <h3 class="event-item-name">Battle of the Bands</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 25 Evening • Main Stage</span>
+            <span>👥 Band of 4 — 8 Musicians</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹50,000 + Studio Time</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Battle of the Bands">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 5: Street Dance -->
+        <div class="event-card-item" data-category="cultural" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(245, 138, 44, 0.15); color: var(--color-amber-glow);">Cultural</span>
+            <span class="event-mode-badge">Offline (Central Plaza)</span>
+          </div>
+          <h3 class="event-item-name">Step Up: Street Dance</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 26 • Open Arena</span>
+            <span>👥 Crew Battle (6 — 15 dancers)</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹35,000 + Trophy</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Dance">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 6: Kalakaar Katta Acoustic -->
+        <div class="event-card-item" data-category="cultural" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(245, 138, 44, 0.15); color: var(--color-amber-glow);">Cultural</span>
+            <span class="event-mode-badge">Offline (Katta Circle)</span>
+          </div>
+          <h3 class="event-item-name">Kalakaar Katta Unplugged</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 & 25 • Acoustic Stage</span>
+            <span>👥 Solo / Duo Performances & Poetry</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹20,000 + Feature Spot</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Kalakaar Katta">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 7: Shark Arena (B-Plan) -->
+        <div class="event-card-item" data-category="me" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(59, 130, 246, 0.15); color: #2563eb;">ME (Business)</span>
+            <span class="event-mode-badge">Offline (Auditorium)</span>
+          </div>
+          <h3 class="event-item-name">Shark Arena: B-Plan</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 25 • Venture Pitching Room</span>
+            <span>👥 2 — 4 Founders per team</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹60,000 Seed Grants</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Shark Arena">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 8: Crisis Simulation -->
+        <div class="event-card-item" data-category="me" data-mode="online">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(59, 130, 246, 0.15); color: #2563eb;">ME (Strategy)</span>
+            <span class="event-mode-badge online">Online (Discord & Zoom)</span>
+          </div>
+          <h3 class="event-item-name">Corporate Crisis Simulation</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 • Virtual War Room</span>
+            <span>👥 Squad of 3 delegates</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹25,000 + Certificates</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Crisis Simulation">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 9: Wolf of Dalal Street -->
+        <div class="event-card-item" data-category="me" data-mode="online">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(59, 130, 246, 0.15); color: #2563eb;">ME (Trading)</span>
+            <span class="event-mode-badge online">Online Simulated Terminal</span>
+          </div>
+          <h3 class="event-item-name">Wolf of Dalal Street</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 — 25 • Live Market Hours</span>
+            <span>👥 Solo / Duo Algorithmic Traders</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹30,000 Cash Prize</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Wolf of Dalal Street">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 10: Esports Arena -->
+        <div class="event-card-item" data-category="me" data-mode="online">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">Esports</span>
+            <span class="event-mode-badge online">Online (Custom Servers)</span>
+          </div>
+          <h3 class="event-item-name">Valorant & BGMI Cup</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 26 • Official Streamed Finals</span>
+            <span>👥 Team of 5 (Valorant) / 4 (BGMI)</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹40,000 + Gear</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Esports">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 11: Cricket T20 -->
+        <div class="event-card-item" data-category="sports" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge">Sports</span>
+            <span class="event-mode-badge">Offline (Cricket Oval)</span>
+          </div>
+          <h3 class="event-item-name">Kurukshetra T20 Trophy</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 24 — 27 • Turf Pitch</span>
+            <span>👥 XI + 4 substitutes</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹50,000 + Phoenix Cup</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Cricket">Register</a>
+          </div>
+        </div>
+
+        <!-- Event 12: Chess Grand Prix -->
+        <div class="event-card-item" data-category="me" data-mode="offline">
+          <div class="event-card-top">
+            <span class="event-cat-badge" style="background: rgba(59, 130, 246, 0.15); color: #2563eb;">ME (Mind Sports)</span>
+            <span class="event-mode-badge">Offline (Mind Hall)</span>
+          </div>
+          <h3 class="event-item-name">Chess Grand Prix</h3>
+          <div class="event-item-meta">
+            <span>📅 Oct 25 • Rapid & Blitz FIDE Rules</span>
+            <span>👥 Individual Open Category</span>
+          </div>
+          <div class="event-item-footer">
+            <span class="event-prize-tag">₹20,000 + Grand Trophy</span>
+            <a href="#register" class="btn-pill-dark open-reg-modal" data-event-name="Chess">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Events Message (hidden by default) -->
+      <div id="noEventsMessage" style="display: none; text-align: center; padding: 60px 20px;">
+        <h4 style="font-family: var(--font-header-spartan); font-size: 1.5rem; margin-bottom: 8px;">No events matched your search</h4>
+        <p style="color: var(--text-dark-secondary);">Try adjusting your search query, switching categories, or clearing mode filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Interactive Statement Section with Embedded Inline Pills (Homepage3.png)
+       ========================================================================= -->
+  <section class="statement-section" id="statement">
+    <div class="container">
+      <div class="statement-box">
+        <!-- Floating Leaping Athlete Silhouette over 'believe' -->
+        <img src="assets/jumping-player.png" alt="Jumping Athlete" class="statement-jumping-athlete">
+
+        <h2 class="statement-headline">
+          We believe Kurukshetra is more than
+          <span class="inline-chip-media"><img src="assets/pill-player.png" alt="Athlete in motion"></span>
+          a game.
+          It’s a place to play with purpose, build your
+          skills, meet
+          <span class="inline-chip-media"><img src="assets/pill-racket.png" alt="Padel racket & balls"></span>
+          your rivals, and make
+          every battle count.
+        </h2>
+      </div>
+
+      <!-- 3 Feature Cards Grid -->
+      <div class="statement-cards-grid">
+        <!-- Card 1: Our People (Dark Navy) -->
+        <div class="card-our-people">
+          <div>
+            <div class="card-tag-accent">OUR CONTINGENTS</div>
+            <h3>Elite athletes, fierce rivalries, and an arena built for champions.</h3>
+          </div>
+          <div class="card-bottom-row">
+            <div class="card-avatar-group">
+              <img src="assets/hero-avatars.png" alt="Team Avatars">
+              <span class="card-avatar-text">A growing contingent<br>of university champions.</span>
+            </div>
+            <a href="#statement" class="btn-pill-dark">ABOUT US</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Photo Racket Card -->
+        <div class="card-photo-racket">
+          <img src="assets/card-racket.png" alt="Court with Racket" class="card-photo-bg">
+          <div class="card-photo-overlay"></div>
+          
+          <div class="card-photo-header">
+            <span class="card-pill-tag">Sport • Community • Glory</span>
+            <div class="card-floating-badge">
+              <div class="badge-icon">🔥</div>
+              <div class="badge-stat">3.5K+</div>
+              <div class="badge-label">Athletes Competing</div>
+            </div>
+          </div>
+
+          <div class="card-photo-footer">
+            <h3>Play more.<br>Connect more.</h3>
+          </div>
+        </div>
+
+        <!-- Card 3: Our Impact Rating Meter -->
+        <div class="card-impact-meter">
+          <div>
+            <div class="card-impact-header">
+              <span class="impact-tag">CHAMPIONSHIP RATING</span>
+              <div class="impact-icon-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg>
+              </div>
+            </div>
+            <div class="impact-stat-number">90%</div>
+            <div class="impact-stat-label">Matches Completed On Schedule</div>
+
+            <!-- 16 Segment Bars in glowing Flame Orange -->
+            <div class="segment-meter-wrapper">
+              <div class="segment-bars">
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar filled"></div>
+                <div class="segment-bar"></div>
+                <div class="segment-bar"></div>
+              </div>
+              <div class="segment-labels">
+                <span>0%</span>
+                <span>100%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-impact-footer">
+            <p>Universities that return every year to conquer the flame</p>
+            <a href="#event-search" class="btn-circle-arrow" aria-label="Explore Events">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Impact in Numbers (Homepage4.png)
+       ========================================================================= -->
+  <section class="numbers-section">
+    <div class="container">
+      <h3 class="numbers-title">Our impact in numbers</h3>
+      <div class="numbers-grid">
+        <div class="number-col">
+          <div class="number-stat">3.2K+</div>
+          <div class="number-label">Registered Athletes</div>
+        </div>
+        <div class="number-col">
+          <div class="number-stat">240+</div>
+          <div class="number-label">Matches Played Monthly</div>
+        </div>
+        <div class="number-col">
+          <div class="number-stat">9+</div>
+          <div class="number-label">Championship Events</div>
+        </div>
+        <div class="number-col">
+          <div class="number-stat">99%</div>
+          <div class="number-label">Participant Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Vibrant Electric Flame Disciplines Banner (Updated from "Services")
+       ========================================================================= -->
+  <section class="flame-accent-section" id="disciplines">
+    <div class="container">
+      <div class="flame-header-row">
+        <div class="flame-header-left">
+          <span class="section-tag-pill dark">DISCIPLINES & ARENAS</span>
+          <h2>Made for every part<br>of your game.</h2>
+        </div>
+        <div class="flame-header-right">
+          <p>
+            Book your court, sharpen your skills, join the competition, and find everything you need to enjoy the game at FLAME KURUKSHETRA.
+          </p>
+        </div>
+      </div>
+
+      <!-- Disciplines Showcase Cards Row -->
+      <div class="flame-cards-row">
+        <!-- Card 1: Padel & Tennis -->
+        <div class="flame-discipline-card">
+          <img src="assets/card-racket.png" alt="Racket Arena" class="discipline-card-img">
+          <div class="discipline-card-body">
+            <span class="discipline-category-tag">RACKET SPORTS</span>
+            <h3>Padel & Center Court Tennis</h3>
+            <p>Olympic-grade turf, glass-walled padel enclosures, and match-ready floodlit courts for intense singles and doubles play.</p>
+            <div class="discipline-meta">
+              <span>8 Professional Courts</span>
+              <a href="#event-search" style="color: var(--color-primary-flame);">Book Arena →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Football & Field -->
+        <div class="flame-discipline-card">
+          <img src="assets/bento-player-serve.png" alt="Smash Tennis Action" class="discipline-card-img">
+          <div class="discipline-card-body">
+            <span class="discipline-category-tag">PRO LEAGUES</span>
+            <h3>Championship Tournaments</h3>
+            <p>High-stakes inter-collegiate knockout brackets, certified national referees, and live-streamed finals under the lights.</p>
+            <div class="discipline-meta">
+              <span>National Ranking Event</span>
+              <a href="#event-search" style="color: var(--color-primary-flame);">Register Team →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Training & Performance -->
+        <div class="flame-discipline-card">
+          <img src="assets/how-it-works-player.png" alt="Athlete in High Speed Motion" class="discipline-card-img">
+          <div class="discipline-card-body">
+            <span class="discipline-category-tag">HIGH PERFORMANCE</span>
+            <h3>Athletic Conditioning & Arenas</h3>
+            <p>Olympic-grade sprint tracks, state-of-the-art training facilities, and competitive grounds forged for collegiate peak performance.</p>
+            <div class="discipline-meta">
+              <span>Championship Facilities</span>
+              <a href="#event-search" style="color: var(--color-primary-flame);">Explore Arenas →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. "How to Compete" 4-Step Interactive Accordion (Homepage5.png)
+       ========================================================================= -->
+  <section class="how-section">
+    <div class="container">
+      <div class="how-grid">
+        <!-- Left: Accordion Steps -->
+        <div class="how-left-content">
+          <span class="section-tag-pill">How to Join</span>
+          <h2 class="how-title">From booking to<br>your best game.</h2>
+
+          <div class="how-steps-list">
+            <!-- Step 01 (Active by default) -->
+            <div class="how-step-item active">
+              <div class="how-step-header">
+                <span class="how-step-num">01</span>
+                <span class="how-step-name">Choose your court</span>
+              </div>
+              <p class="how-step-desc">
+                Weekly or monthly friendly matches to meet new players and enjoy great games across football, basketball, and rackets.
+              </p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="how-step-item">
+              <div class="how-step-header">
+                <span class="how-step-num">02</span>
+                <span class="how-step-name">Book your session</span>
+              </div>
+              <p class="how-step-desc">
+                Reserve your preferred time slot or register your university squad in just a few clicks with instant confirmation.
+              </p>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="how-step-item">
+              <div class="how-step-header">
+                <span class="how-step-num">03</span>
+                <span class="how-step-name">Arrive & get ready</span>
+              </div>
+              <p class="how-step-desc">
+                Check in at the FLAME University sports complex, access player locker rooms, and warm up with pro gear.
+              </p>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="how-step-item">
+              <div class="how-step-header">
+                <span class="how-step-num">04</span>
+                <span class="how-step-name">Play & improve</span>
+              </div>
+              <p class="how-step-desc">
+                Battle through intense sets, sharpen your competitive instincts, and climb the Kurukshetra tournament leaderboards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Action Photo in Motion Blur -->
+        <div class="how-right-media">
+          <img src="assets/how-it-works-player.png" alt="Athlete in Motion Blur" class="how-right-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Bento Grid ("More than a game. A better experience.") (Homepage6.png)
+       ========================================================================= -->
+  <section class="bento-section">
+    <div class="container">
+      <div class="bento-header">
+        <span class="section-tag-pill">Why us</span>
+        <h2 class="bento-title">More than a game. A<br>better experience.</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Card 1: Left Tall Court -->
+        <div class="bento-card-tall">
+          <img src="assets/bento-court.png" alt="Championship Court Stands">
+        </div>
+
+        <!-- Bento Card 2: Center Wide Player Serving -->
+        <div class="bento-card-wide">
+          <img src="assets/bento-player-serve.png" alt="Player Serving Overhead">
+          <div class="bento-slider-dots">
+            <span class="bento-dot active"></span>
+            <span class="bento-dot"></span>
+            <span class="bento-dot"></span>
+          </div>
+        </div>
+
+        <!-- Bento Card 3: Top Right Dark Trophy Card -->
+        <div class="bento-card-trophy">
+          <div class="trophy-icon">🏆</div>
+          <div class="bento-trophy-stat">24+</div>
+          <div class="bento-trophy-label">Pro tournaments every year</div>
+        </div>
+
+        <!-- Bento Card 4: Bottom Right Flame Active Members -->
+        <div class="bento-card-members">
+          <img src="assets/phoenix-web.png" alt="Phoenix Silhouette" class="bento-phoenix-bg">
+          <div class="bento-avatars-cluster">
+            <img src="assets/hero-avatars.png" alt="Members Avatars">
+          </div>
+          <div class="bento-members-stat">5,000+</div>
+          <div class="bento-members-label">Active members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. BLOGS & STORIES SECTION (The Phoenix Chronicles)
+       ========================================================================= -->
+  <section class="blogs-section" id="blogs">
+    <div class="container">
+      <div class="blogs-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <span class="section-tag-pill">THE PHOENIX CHRONICLES</span>
+          <h2 class="blogs-title">Stories, Rivalries & Insights</h2>
+        </div>
+        <a href="../Blog page/index.html" class="btn-pill-orange" style="margin-bottom: 12px; font-size: 0.85rem; padding: 8px 18px;">
+          Open Newsroom & All Stories →
+        </a>
+      </div>
+
+      <div class="blogs-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/hero-player.png" alt="Rise of the Phoenix">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta-top">
+              <span class="blog-tag">HERITAGE</span>
+              <span>5 MIN READ</span>
+            </div>
+            <h3 class="blog-card-title">Rising From The Ashes: The Evolution of Kurukshetra's Phoenix</h3>
+            <p class="blog-card-excerpt">
+              How a collegiate sports meet grew into Western India's premier sporting festival, adopting the legendary firebird as its symbol of unyielding tenacity.
+            </p>
+            <a href="../Blog page/index.html#story-4" class="blog-read-link">Read Story →</a>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/collage-run.png" alt="Football Clash">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta-top">
+              <span class="blog-tag">RIVALRIES</span>
+              <span>4 MIN READ</span>
+            </div>
+            <h3 class="blog-card-title">Inside The Rivalries: The FLAME vs IIT Bombay Football Clashes</h3>
+            <p class="blog-card-excerpt">
+              Over time, no matchup has brought more electric crowd energy to the Pune night turf than the annual gridiron derby between the Lions and the Bombay contingent.
+            </p>
+            <a href="../Blog page/index.html#story-5" class="blog-read-link">Read Story →</a>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/collage-cheer.png" alt="Kalakaar Katta Soul">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta-top">
+              <span class="blog-tag">CULTURAL</span>
+              <span>6 MIN READ</span>
+            </div>
+            <h3 class="blog-card-title">Behind Kalakaar Katta: The Making of FLAME’s Most Intimate Stage</h3>
+            <p class="blog-card-excerpt">
+              A look into the late-night acoustic jams, indie music discoveries, and poetry circles that give Kurukshetra its artistic heartbeat.
+            </p>
+            <a href="../Blog page/index.html#story-6" class="blog-read-link">Read Story →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. Testimonials Section (Homepage7.png)
+       ========================================================================= -->
+  <section class="testimonial-section" id="testimonials">
+    <div class="container">
+      <!-- Quote Testimonial -->
+      <div class="testimonial-container">
+        <blockquote class="testimonial-quote">
+          “The courts are always spotless, the booking process is super smooth, and every session feels amazing. FLAME KURUKSHETRA has completely changed the way I enjoy sports.”
+        </blockquote>
+
+        <!-- 3 Clickable Author Tabs -->
+        <div class="testimonial-switcher">
+          <div class="testimonial-author-tab active" data-index="0">
+            <img src="assets/hero-avatars.png" alt="Jordan Smith" class="author-avatar" style="object-position: left center;">
+            <span class="author-name">Jordan Smith</span>
+            <span class="author-role">Academy player, KURUKSHETRA®</span>
+          </div>
+
+          <div class="testimonial-author-tab" data-index="1">
+            <img src="assets/hero-avatars.png" alt="Alex Johnson" class="author-avatar" style="object-position: center;">
+            <span class="author-name">Alex Johnson</span>
+            <span class="author-role">Football Captain, IIT Bombay</span>
+          </div>
+
+          <div class="testimonial-author-tab" data-index="2">
+            <img src="assets/hero-avatars.png" alt="Taylor Brown" class="author-avatar" style="object-position: right center;">
+            <span class="author-name">Taylor Brown</span>
+            <span class="author-role">Basketball MVP, FLAME University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. FAQ Section (Homepage8.png)
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-tag-pill">FAQ</span>
+        <h2 class="faq-title">Got Questions? We’ve<br>Got You Covered.</h2>
+      </div>
+
+      <div class="faq-grid">
+        <!-- Left: Image Card with Bold Overlay -->
+        <div class="faq-image-card">
+          <img src="assets/faq-player.png" alt="Aerial Tennis Court Action" class="faq-img">
+          <div class="faq-image-overlay">
+            <div class="faq-image-title">
+              More Than a Game.<br>
+              <span class="accent">A Community.</span>
+            </div>
+            <p class="faq-image-subtitle">Play. Connect. Belong.</p>
+          </div>
+        </div>
+
+        <!-- Right: 6 Accordion Items -->
+        <div class="faq-accordion-list">
+          <!-- FAQ 1 (Active by default) -->
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>How do I book a court or register a contingent?</span>
+              <div class="faq-toggle-icon">−</div>
+            </div>
+            <div class="faq-answer">
+              You can easily register through our portal or by clicking "Register Contingent". Choose your university, select your sports or cultural categories, and confirm your squad credentials.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need a membership to play?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              No prior membership is required! We welcome university contingents, independent athletes, and collegiate teams from across India to participate in official brackets.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I bring my own equipment?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Yes! You are encouraged to bring your own match-grade rackets, balls, and athletic equipment. Official tournament-grade equipment is also available at the sports complex.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What practice arenas and training facilities are available?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              All registered university contingents have full access to warmup zones, practice courts, Olympic-grade track facilities, player locker rooms, and match equipment.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are accommodation and meals provided for outstation teams?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Yes! Full outstation contingents receive on-campus residential hostel accommodation, dining hall passes, and round-trip campus shuttles upon registration.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is your cancellation and refund policy?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Contingent registrations can be modified or roster substitutions made up to 7 days prior to tournament kickoff without administrative penalty.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link to Complete 36-Question Knowledge Base -->
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="/faq" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #FE5A00; color: #ffffff; padding: 0.85rem 1.85rem; border-radius: 9999px; text-decoration: none; font-family: var(--font-subheader-montserrat); font-weight: 700; font-size: 0.95rem; box-shadow: 0 4px 15px rgba(254, 90, 0, 0.4); transition: transform 0.2s ease;">
+          <span>Explore All 36+ Questions & Knowledge Base</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       15. KURU COLLAGE AT THE END
+       ========================================================================= -->
+  <section class="kuru-collage-section">
+    <div class="container">
+      <div class="collage-header">
+        <span class="section-tag-pill">MEMORIES FORGED IN FIRE</span>
+        <h2 class="collage-title">The Kurukshetra Collage</h2>
+        <p style="color: var(--text-dark-secondary); margin-top: 8px;">
+          Decades of heart, sweat, buzzer-beaters, and golden memories captured on the FLAME campus.
+        </p>
+      </div>
+
+      <div class="collage-masonry-grid">
+        <!-- Big Featured Shot (2x2) -->
+        <div class="collage-item span-2x2">
+          <img src="assets/hero-player.png" alt="Moment of Glory">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">The Final Point Smash</div>
+            <div class="collage-caption-sub">Center Court • Kurukshetra 2025</div>
+          </div>
+        </div>
+
+        <!-- Shot 2 -->
+        <div class="collage-item">
+          <img src="assets/collage-cheer.png" alt="Cheering Crowd">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">Kalakaar Katta Nights</div>
+            <div class="collage-caption-sub">10,000+ Singing in Unison</div>
+          </div>
+        </div>
+
+        <!-- Shot 3 -->
+        <div class="collage-item">
+          <img src="assets/card-racket.png" alt="Racket Arena Prep">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">Match Point Focus</div>
+            <div class="collage-caption-sub">Padel Championship</div>
+          </div>
+        </div>
+
+        <!-- Shot 4 (Wide span 2x1) -->
+        <div class="collage-item span-2x1">
+          <img src="assets/cta-court.png" alt="Night Floodlit Turf">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">Floodlights on the Turf Arena</div>
+            <div class="collage-caption-sub">Maidaan Football Finals</div>
+          </div>
+        </div>
+
+        <!-- Shot 5 -->
+        <div class="collage-item">
+          <img src="assets/collage-run.png" alt="Athletic Sprint">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">Track Sprint to the Wire</div>
+            <div class="collage-caption-sub">Athletics Gold Medalist</div>
+          </div>
+        </div>
+
+        <!-- Shot 6 -->
+        <div class="collage-item">
+          <img src="assets/bento-player-serve.png" alt="Overhead Serve">
+          <div class="collage-overlay-caption">
+            <div class="collage-caption-title">Unstoppable Drive</div>
+            <div class="collage-caption-sub">Tournament MVP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       16. SPONSOR & PARTNER SECTION (Past for credibility, Current for branding)
+       ========================================================================= -->
+  <section class="sponsor-section" id="sponsors">
+    <div class="container">
+      <div class="sponsor-header">
+        <span class="section-tag-pill dark">OUR PARTNERS</span>
+        <h2 class="sponsor-title">Powered by World-Class Brands</h2>
+        <p class="sponsor-subtitle">
+          From global athletic giants to national industry leaders, meet the partners powering the fire of Kurukshetra.
+        </p>
+      </div>
+
+      <!-- Current 2026 Sponsors for Branding & Advertising -->
+      <div class="sponsor-tier-heading">OFFICIAL 2026 SPONSORS & MEDIA PARTNERS</div>
+      
+      <div class="current-sponsors-grid">
+        <!-- Current Sponsor 1 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">TITLE PARTNER</span>
+          <div class="sponsor-logo-text">RED BULL</div>
+        </div>
+
+        <!-- Current Sponsor 2 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">POWERED BY</span>
+          <div class="sponsor-logo-text">FAST&UP</div>
+        </div>
+
+        <!-- Current Sponsor 3 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">OFFICIAL APPAREL</span>
+          <div class="sponsor-logo-text">UNDER ARMOUR</div>
+        </div>
+
+        <!-- Current Sponsor 4 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">HYDRATION PARTNER</span>
+          <div class="sponsor-logo-text">BISLERI</div>
+        </div>
+
+        <!-- Current Sponsor 5 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">AUDIO & CULTURAL STAGE</span>
+          <div class="sponsor-logo-text">SPOTIFY</div>
+        </div>
+
+        <!-- Current Sponsor 6 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">EQUIPMENT PARTNER</span>
+          <div class="sponsor-logo-text">DECATHLON</div>
+        </div>
+
+        <!-- Current Sponsor 7 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">MOBILITY PARTNER</span>
+          <div class="sponsor-logo-text">TATA MOTORS</div>
+        </div>
+
+        <!-- Current Sponsor 8 -->
+        <div class="sponsor-card-box">
+          <span class="sponsor-role-tag">FITNESS PARTNER</span>
+          <div class="sponsor-logo-text">CULT.FIT</div>
+        </div>
+      </div>
+
+      <!-- Past Sponsors Infinite Marquee for Credibility -->
+      <div class="past-sponsors-wrap">
+        <div class="past-sponsors-label">TRUSTED BY INDUSTRY TITANS ACROSS PAST EDITIONS</div>
+        <div style="overflow: hidden; width: 100%;">
+          <div class="past-marquee-track">
+            <span class="past-logo-item">NIKE</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">MONSTER ENERGY</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">TATA</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">RED BULL</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">DECATHLON</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">BISLERI</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">MTV INDIA</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">FAST&UP</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">UNDER ARMOUR</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">ONE8</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">CULT.FIT</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">SPOTIFY</span>
+            <!-- DUPLICATE MARQUEE FOR SMOOTH INFINITE SCROLL -->
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">NIKE</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">MONSTER ENERGY</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">TATA</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">RED BULL</span>
+            <span class="past-logo-item">•</span>
+            <span class="past-logo-item">DECATHLON</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsorship Inquiry Call to Action -->
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="#register" class="btn-pill-white open-reg-modal">Partner With Kurukshetra 2026</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       17. Pre-Footer CTA Banner & Giant Signature Footer (Homepage9.png)
+       ========================================================================= -->
+  <!-- Pre-Footer Banner -->
+  <section class="cta-banner-section">
+    <img src="assets/cta-court.png" alt="Championship Court Surface" class="cta-banner-bg">
+    <div class="cta-banner-overlay">
+      <div class="cta-floating-card">
+        <h4>Play together. Connect beyond the game. Build your community.</h4>
+        <a href="#register" class="btn-pill-flame open-reg-modal">Register Contingent</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Giant Signature Flame Footer -->
+  <footer class="giant-footer">
+    <div class="container">
+      <!-- Huge Iconic Brand Header with Phoenix Emblem -->
+      <div class="giant-brand-row">
+        <img src="assets/phoenix-web.png" alt="Kurukshetra Phoenix Brand" class="giant-phoenix-logo">
+        <div class="giant-brand-name">KURUKSHETRA<sup>®</sup></div>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-columns-row">
+        <!-- Left Column -->
+        <div class="footer-left-col">
+          <p>
+            Experience collegiate sports & cultural festivities like never before — championship rivalries, skill-building sessions, and a community that feels like home.
+          </p>
+        </div>
+
+        <!-- Middle Column: Navigation -->
+        <div class="footer-nav-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#event-search" class="footer-link">All Events</a></li>
+            <li><a href="#affiliated" class="footer-link">Affiliated Fests</a></li>
+            <li><a href="#disciplines" class="footer-link">Experience</a></li>
+            <li><a href="../EC Page/index.html" class="footer-link">Committee Heads</a></li>
+            <li><a href="../Blog page/index.html" class="footer-link">Stories & Blogs</a></li>
+            <li><a href="#sponsors" class="footer-link">Sponsors</a></li>
+            <li><a href="#faq" class="footer-link">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Social Links -->
+        <div class="footer-social-col">
+          <h5>Socials</h5>
+          <ul class="footer-links-list">
+            <li><a href="https://instagram.com" target="_blank" class="footer-link">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank" class="footer-link">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank" class="footer-link">Facebook</a></li>
+            <li><a href="https://linkedin.com" target="_blank" class="footer-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>© 2026 FLAME KURUKSHETRA. All rights reserved.</span>
+        <span>FLAME University • Pune, Maharashtra, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       18. Interactive Registration Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="registrationModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <img src="assets/phoenix-icon.png" alt="Phoenix" style="width: 28px; height: 28px;">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary-flame); letter-spacing: 0.1em;">FLAME KURUKSHETRA 2026</span>
+        </div>
+        <h3>Contingent Registration</h3>
+        <p>Register your university contingent or event team for the 2026 season.</p>
+      </div>
+
+      <form class="modal-form" id="contingentForm">
+        <div class="form-group">
+          <label for="collegeName">University / Institution Name</label>
+          <input type="text" id="collegeName" placeholder="e.g. IIT Bombay, St. Xavier's, Ashoka, FLAME" required>
+        </div>
+
+        <div class="form-group">
+          <label for="leaderName">Contingent Leader / Player Name</label>
+          <input type="text" id="leaderName" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">Official Email</label>
+          <input type="email" id="contactEmail" placeholder="player@university.edu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sportCategory">Primary Event / Sport Category</label>
+          <select id="sportCategory" required>
+            <option value="">Select your event category...</option>
+            <option value="football">Football Championship (Maidaan)</option>
+            <option value="basketball">Basketball Slam</option>
+            <option value="tennis">Tennis & Padel Open</option>
+            <option value="cricket">Kurukshetra T20 Cricket</option>
+            <option value="badminton">Badminton Open</option>
+            <option value="kalakaar">Kalakaar Katta (Cultural / Band / Dance)</option>
+            <option value="me">ME (Shark Arena / Crisis Simulation / Wolf of Dalal Street)</option>
+            <option value="esports">Esports Arena (BGMI / Valorant)</option>
+            <option value="contingent">Full University Contingent (All Events)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="teamSize">Approximate Squad Size</label>
+          <select id="teamSize" required>
+            <option value="single">Solo / Duo (1-2 members)</option>
+            <option value="small">Small Squad (3-8 members)</option>
+            <option value="medium">Medium Squad (9-20 members)</option>
+            <option value="large">Full University Contingent (20+ athletes & performers)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-pill-flame" style="width: 100%; justify-content: center; margin-top: 10px;">
+          Submit Registration Pack
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

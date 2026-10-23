@@ -1,0 +1,54 @@
+/* FLAME Kurukshetra Brand System */
+:root {
+  /* 
+   * PRIMARY COLORS
+   * Extracted from KURUKSHETRA BRAND PALLETTE.pdf and FLAME KURUKSHETRA 2027 brand guidelines.pdf 
+   */
+  --color-primary-flame: #FE5A00;
+  --color-primary-black: #000000;
+  --color-primary-white: #FFFFFF;
+
+  /* 
+   * SECONDARY & TERTIARY COLORS
+   */
+  --color-burnt-orange: #EA5401;
+  --color-persimmon: #F26D26;
+  --color-copper: #E47A2F;
+  --color-brick-red: #AB0C02;
+  --color-amber-glow: #F58A2C;
+  --color-accent-dark-orange: #D84629;
+  --color-accent-yellow: #FAAD36;
+
+  /* 
+   * TYPOGRAPHY 
+   * Update the fallback fonts (sans-serif) based on your final imported web fonts.
+   */
+  
+  /* Primary Display & Headers */
+  --font-header-horizon: 'HORIZON', sans-serif;
+  --font-header-anton: 'Anton', sans-serif;
+  --font-header-spartan: 'League Spartan', sans-serif;
+  --font-header-bebas: 'BEBAS NEUE', sans-serif;
+  --font-header-archivo: 'Archivo Black', sans-serif;
+  
+  /* Subheaders */
+  --font-subheader-barlow: 'Barlow Condensed', sans-serif;
+  --font-subheader-montserrat: 'Montserrat', sans-serif;
+  --font-subheader-josefin: 'Josefin Sans', sans-serif;
+
+  /* Body Text */
+  --font-body-space-grotesk: 'Space Grotesk', sans-serif; /* Ideal for long form paragraphs */
+  --font-body-mozer: 'Mozer', sans-serif; /* Ideal for short form digital UI */
+  --font-body-dm-sans: 'DM Sans', sans-serif;
+  --font-body-poppins: 'Poppins', sans-serif;
+}
+
+/* Base Utility Classes */
+.bg-flame-orange { background-color: var(--color-primary-flame); }
+.text-flame-orange { color: var(--color-primary-flame); }
+.bg-black { background-color: var(--color-primary-black); }
+.text-white { color: var(--color-primary-white); }
+
+.font-header { font-family: var(--font-header-spartan); }
+.font-subheader { font-family: var(--font-subheader-montserrat); }
+.font-body { font-family: var(--font-body-dm-sans); }

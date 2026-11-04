@@ -150,40 +150,40 @@ export default function HomePage() {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#12141C] to-transparent" />
 
         {/* Hero Center Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center flex flex-col items-center">
           {/* Skewed Route du Rhum Accent Bar */}
-          <span className="rdr-trait mb-5" />
+          <span className="rdr-trait mb-4 sm:mb-5" />
 
           {/* Main Wide Bold Poppins Headline */}
-          <h1 className="font-horizon-wide text-4xl sm:text-6xl lg:text-7xl xl:text-[5.25rem] font-black uppercase tracking-[0.06em] text-white leading-[1.04] drop-shadow-[0_8px_30px_rgba(0,0,0,0.7)]">
+          <h1 className="font-horizon-wide text-[2rem] xs:text-[2.35rem] sm:text-6xl lg:text-7xl xl:text-[5.25rem] font-black uppercase tracking-[0.03em] sm:tracking-[0.06em] text-white leading-[1.06] drop-shadow-[0_8px_30px_rgba(0,0,0,0.7)]">
             FLAME{' '}
-            <span className="text-[var(--color-primary-flame)]">
+            <span className="block sm:inline text-[var(--color-primary-flame)]">
               KURUKSHETRA
             </span>
           </h1>
 
-          <p className="mt-3 sm:mt-4 text-sm sm:text-lg lg:text-xl font-bold uppercase tracking-[0.26em] text-white/90">
+          <p className="mt-3 sm:mt-4 text-xs xs:text-sm sm:text-lg lg:text-xl font-bold uppercase tracking-[0.18em] sm:tracking-[0.26em] text-white/90">
             The Conclave of Champions • 2027 Edition
           </p>
 
-          <p className="mt-5 max-w-2xl text-sm sm:text-base lg:text-lg text-white/80 font-normal leading-relaxed">
+          <p className="mt-4 sm:mt-5 max-w-2xl text-xs xs:text-sm sm:text-base lg:text-lg text-white/80 font-normal leading-relaxed px-1">
             Where Western India&apos;s finest collegiate athletes, artists, strategists, and esports squads converge across four electrifying days of championship glory.
           </p>
 
           {/* Most Prominent Element: Register Now CTA */}
-          <div className="mt-9 sm:mt-11 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <div className="mt-8 sm:mt-11 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
             <Link
               to="/register"
-              className="rdr-btn group relative inline-flex items-center justify-center gap-3 bg-[var(--color-primary-flame)] hover:bg-[#ff6a1a] text-white font-black uppercase tracking-[0.12em] text-base sm:text-lg px-9 sm:px-12 py-4 sm:py-5 shadow-[0_14px_45px_rgba(254,90,0,0.6)] hover:shadow-[0_18px_55px_rgba(254,90,0,0.8)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
+              className="rdr-btn group relative inline-flex items-center justify-center gap-2.5 sm:gap-3 bg-[var(--color-primary-flame)] hover:bg-[#ff6a1a] text-white font-black uppercase tracking-[0.08em] sm:tracking-[0.12em] text-sm xs:text-base sm:text-lg px-6 sm:px-12 py-4 sm:py-5 shadow-[0_14px_45px_rgba(254,90,0,0.6)] hover:shadow-[0_18px_55px_rgba(254,90,0,0.8)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
             >
               <UserPlus className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
               <span>Register Contingent Now</span>
-              <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
             </Link>
 
             <Link
               to="/schedule"
-              className="rdr-btn inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-[0.1em] text-xs sm:text-sm px-6 sm:px-7 py-4 sm:py-5 transition w-full sm:w-auto"
+              className="rdr-btn inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-[0.1em] text-xs sm:text-sm px-6 sm:px-7 py-3.5 sm:py-5 transition w-full sm:w-auto"
             >
               <Calendar className="w-4 h-4 text-[var(--color-primary-flame)]" />
               <span>Explore Events</span>
@@ -274,8 +274,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 4 Credibility Counter Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* 4 Credibility Counter Cards (2x2 on Mobile, 4 cols on Desktop) */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
             {[
               {
                 number: '50+',
@@ -304,21 +304,21 @@ export default function HomePage() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="rdr-card-sm bg-[#11131B] border border-white/10 p-6 sm:p-7 flex flex-col justify-between hover:border-[var(--color-primary-flame)]/50 transition-all duration-300 shadow-xl"
+                className="rdr-card-sm bg-[#11131B] border border-white/10 p-4 sm:p-7 flex flex-col justify-between hover:border-[var(--color-primary-flame)]/50 transition-all duration-300 shadow-xl"
                 style={{ borderTop: `4px solid ${stat.accent}` }}
               >
                 <div>
                   <div
-                    className="font-horizon text-4xl sm:text-5xl font-black tracking-wide leading-none"
+                    className="font-horizon text-2xl xs:text-3xl sm:text-5xl font-black tracking-wide leading-none"
                     style={{ color: stat.accent }}
                   >
                     {stat.number}
                   </div>
-                  <div className="mt-3 text-xs sm:text-sm font-extrabold uppercase tracking-[0.14em] text-white">
+                  <div className="mt-2 sm:mt-3 text-[11px] sm:text-sm font-extrabold uppercase tracking-[0.08em] sm:tracking-[0.14em] text-white leading-snug">
                     {stat.label}
                   </div>
                 </div>
-                <p className="mt-3 text-xs sm:text-sm text-white/65 font-normal leading-relaxed">
+                <p className="mt-2 sm:mt-3 text-[11px] sm:text-sm text-white/65 font-normal leading-relaxed hidden xs:block">
                   {stat.sub}
                 </p>
               </div>
@@ -381,8 +381,8 @@ export default function HomePage() {
           </div>
 
           {/* Category Filter Buttons: Cultural, Sports, Management, Esports, plus 1-of-Each */}
-          <div className="flex flex-wrap items-center justify-between gap-4 mb-10 pb-6 border-b border-[#0E111D]/10">
-            <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 sm:mb-10 pb-5 sm:pb-6 border-b border-[#0E111D]/10">
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 sm:pb-0 sm:flex-wrap">
               {[
                 { id: 'cultural', label: 'Cultural' },
                 { id: 'sports', label: 'Sports' },
@@ -400,7 +400,7 @@ export default function HomePage() {
                       setSelectedCategory(cat.id);
                     }}
                     className={cn(
-                      'rdr-btn px-5 py-2.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200',
+                      'rdr-btn shrink-0 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200',
                       isActive
                         ? 'bg-[var(--color-primary-flame)] text-white shadow-[0_8px_20px_rgba(254,90,0,0.35)]'
                         : 'bg-white text-[#0E111D] border border-[#0E111D]/15 hover:border-[var(--color-primary-flame)] hover:text-[var(--color-primary-flame)]'
@@ -414,7 +414,7 @@ export default function HomePage() {
 
             <Link
               to="/schedule"
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)] hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)] hover:underline shrink-0"
             >
               <span>View Full Schedule &amp; All Events</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -648,6 +648,12 @@ export default function HomePage() {
               <span>Meet All 17 Festival Heads</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
+          </div>
+
+          {/* Mobile Swipe Hint */}
+          <div className="lg:hidden flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-white/50 mb-3">
+            <span>Swipe horizontally to explore heads</span>
+            <span className="text-[var(--color-primary-flame)]">→</span>
           </div>
 
           {/* Route du Rhum ".skippers" 6-Card Portrait Rail (Snap-Scroll on Mobile, 6 Columns on Desktop) */}

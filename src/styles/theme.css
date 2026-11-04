@@ -53,7 +53,7 @@ body {
   color: var(--color-primary-white);
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   line-height: 1.65;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
@@ -74,16 +74,27 @@ html.light body {
 .font-horizon {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  letter-spacing: 0.03em;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  letter-spacing: 0.025em;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .font-horizon-wide {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+@media (max-width: 639px) {
+  .font-horizon {
+    letter-spacing: 0.015em;
+  }
+  .font-horizon-wide {
+    letter-spacing: 0.025em;
+  }
 }
 
 .font-horizon-outlined {
@@ -119,6 +130,15 @@ html.light body {
 
 .rdr-card-sm {
   border-radius: 18px 3px 14px 3px;
+}
+
+@media (max-width: 639px) {
+  .rdr-card {
+    border-radius: 20px 3px 14px 3px;
+  }
+  .rdr-card-sm {
+    border-radius: 14px 3px 10px 3px;
+  }
 }
 
 .rdr-btn {

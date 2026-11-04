@@ -172,7 +172,7 @@ export default function AlbumPage() {
 
           <div className="w-full lg:w-96 rounded-2xl overflow-hidden border border-white/15 bg-black aspect-video flex items-center justify-center relative group">
             <video
-              src="/assets/album2.mp4"
+              src="/bgvid.mp4"
               controls
               playsInline
               preload="metadata"

@@ -70,10 +70,11 @@ export default function SchedulePage() {
             {/* Category Pills */}
             <div className="flex flex-wrap items-center justify-center gap-1.5">
               {[
-                { id: 'all', label: 'All (20)' },
-                { id: 'sports', label: 'Sports (10)' },
-                { id: 'cultural', label: 'Culturals (5)' },
-                { id: 'me', label: 'Management (5)' },
+                { id: 'all', label: 'All Events' },
+                { id: 'sports', label: 'Sports' },
+                { id: 'cultural', label: 'Cultural' },
+                { id: 'management', label: 'Management' },
+                { id: 'esports', label: 'Esports' },
               ].map((cat) => (
                 <button
                   key={cat.id}

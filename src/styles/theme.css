@@ -2,32 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Horizon';
-  src: url('../../brandguidelines/Horizon-Font/Horizon-Font/Horizon.otf') format('opentype'),
-       url('../../brandguidelines/Horizon-Font/Horizon-Font/Horizon.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Horizon Outlined';
-  src: url('../../brandguidelines/Horizon-Font/Horizon-Font/Horizon_Outlined.otf') format('opentype'),
-       url('../../brandguidelines/Horizon-Font/Horizon-Font/Horizon_Outlined.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --color-primary-flame: #FE5A00;
-  --color-primary-black: #000000;
+  --color-primary-black: #09090B;
   --color-primary-white: #FFFFFF;
-  --font-header-horizon: 'Horizon', sans-serif;
-  --font-header-horizon-outlined: 'Horizon Outlined', sans-serif;
-  --font-header-spartan: 'League Spartan', sans-serif;
-  --font-body-dm-sans: 'DM Sans', sans-serif;
+  --font-header-horizon: 'Poppins', sans-serif;
+  --font-header-horizon-outlined: 'Poppins', sans-serif;
+  --font-header-spartan: 'Poppins', sans-serif;
+  --font-body-dm-sans: 'Poppins', sans-serif;
 
   /* Secondary & Tertiary Brand Accents */
   --color-burnt-orange: #EA5401;
@@ -63,79 +45,101 @@ html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: var(--color-primary-black);
   color: var(--color-primary-white);
-  font-family: var(--font-body-dm-sans);
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.96rem;
+  line-height: 1.65;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 @media (min-width: 640px) {
   body {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.68;
   }
 }
 
 html.light body {
-  background-color: #FAF9F6;
-  color: #09090B;
+  background-color: #F4F1E8;
+  color: #0E111D;
 }
 
-/* Fluid Horizon display typography that automatically scales inside mobile containers */
+/* Wide Bold Poppins display typography for Hero & Section Titles */
 .font-horizon {
-  font-family: var(--font-header-horizon);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.03em;
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+.font-horizon-wide {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .font-horizon-outlined {
-  font-family: var(--font-header-horizon-outlined);
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  -webkit-text-stroke: 1.5px currentColor;
+  color: transparent;
+}
+
+/* Route du Rhum Inspired Structural & UI Utilities (Kurukshetra Palette) */
+.rdr-trait {
+  display: inline-block;
+  width: 54px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-primary-flame);
+  transform: skewX(-20deg);
+}
+
+.rdr-trait-white {
+  display: inline-block;
+  width: 54px;
+  height: 6px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  transform: skewX(-20deg);
+}
+
+.rdr-card {
+  border-radius: 28px 4px 18px 4px;
+}
+
+.rdr-card-sm {
+  border-radius: 18px 3px 14px 3px;
+}
+
+.rdr-btn {
+  border-radius: 12px 3px 12px 3px;
+}
+
+.rdr-skew-stat {
+  transform: skewX(-12deg);
+  border-radius: 6px 2px 6px 2px;
+}
+
+.rdr-skew-stat > * {
+  transform: skewX(12deg);
 }
 
 @media (max-width: 639px) {
-  .font-horizon {
-    letter-spacing: -0.01em !important;
-    line-height: 1.15 !important;
+  .rdr-skew-stat {
+    transform: skewX(-6deg);
   }
-
-  h1.font-horizon {
-    font-size: clamp(0.95rem, 4.4vw, 1.35rem) !important;
-  }
-
-  h2.font-horizon {
-    font-size: clamp(0.9rem, 4.1vw, 1.25rem) !important;
-  }
-
-  h3.font-horizon {
-    font-size: clamp(0.85rem, 3.8vw, 1.1rem) !important;
-  }
-}
-
-/* Desktop/Tablet readable minimum font floor */
-@media (min-width: 640px) {
-  .text-\[8px\],
-  .text-\[9px\],
-  .text-\[10px\],
-  .text-\[11px\] {
-    font-size: 0.8125rem !important;
-    line-height: 1.35 !important;
-  }
-
-  .text-xs {
-    font-size: 0.885rem !important;
-    line-height: 1.45 !important;
-  }
-
-  .text-sm {
-    font-size: 0.975rem !important;
-    line-height: 1.55 !important;
+  .rdr-skew-stat > * {
+    transform: skewX(6deg);
   }
 }
 
@@ -148,35 +152,26 @@ html.light body {
   scrollbar-width: none;
 }
 
-/* Custom utility classes for blueprint grid in both Dark and Light mode */
+/* Subtle section texture patterns */
 .bg-blueprint-grid {
-  background-size: 36px 36px;
+  background-size: 44px 44px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-}
-
-@media (min-width: 640px) {
-  .bg-blueprint-grid {
-    background-size: 64px 64px;
-  }
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
 }
 
 html.light .bg-blueprint-grid {
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 }
 
-.bg-blueprint-subgrid {
-  background-size: 16px 16px;
-  background-image: 
-    linear-gradient(to right, rgba(254, 90, 0, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(254, 90, 0, 0.035) 1px, transparent 1px);
-}
-
-html.light .bg-blueprint-subgrid {
-  background-image: 
-    linear-gradient(to right, rgba(254, 90, 0, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(254, 90, 0, 0.06) 1px, transparent 1px);
+.bg-diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.06) 0px,
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px,
+    transparent 14px
+  );
 }

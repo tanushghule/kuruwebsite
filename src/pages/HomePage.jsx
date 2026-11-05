@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Trophy,
@@ -87,6 +87,16 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedEventModal, setSelectedEventModal] = useState(null);
   const countdown = useCountdown(TARGET_DATE);
+  const heroVideoRef = useRef(null);
+
+  useEffect(() => {
+    const vid = heroVideoRef.current;
+    if (vid) {
+      vid.defaultMuted = true;
+      vid.muted = true;
+      vid.play().catch(() => {});
+    }
+  }, []);
 
   // Filter events and strictly return top 3 for a single clean 3-card row
   const displayedEvents = useMemo(() => {
@@ -127,27 +137,24 @@ export default function HomePage() {
           - Removed top date/location orange beeping dot pill
           - Wide Bold Poppins Hero Typography + Ultra-Prominent Register CTA
       ===================================================================== */}
-      <section className="relative min-h-[86vh] sm:min-h-[90vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10">
-        {/* Background Video */}
+      <section className="relative min-h-[86vh] sm:min-h-[90vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10 bg-black">
+        {/* Background Video (bgvid.mp4) */}
         <video
+          ref={heroVideoRef}
           src="/bgvid.mp4"
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-cover object-center scale-[1.01]"
-        />
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover object-center z-0"
+        >
+          <source src="/bgvid.mp4" type="video/mp4" />
+        </video>
 
-        {/* Slight Black Overlay + Readability Vignette */}
-        <div className="absolute inset-0 bg-black/60" />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(circle at 50% 42%, rgba(9,9,11,0.25) 0%, rgba(9,9,11,0.78) 75%, rgba(9,9,11,0.95) 100%)',
-          }}
-        />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#12141C] to-transparent" />
+        {/* Slight Black Overlay on top of bgvid.mp4 */}
+        <div className="absolute inset-0 bg-black/45 z-[1]" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#12141C] to-transparent z-[1]" />
 
         {/* Hero Center Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center flex flex-col items-center">

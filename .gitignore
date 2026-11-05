@@ -16,6 +16,5 @@ Thumbs.db
 # Temporary extraction directory (original archives preserved in alt/)
 alt/extracted/
 
-# Large video files (>100MB GitHub limit)
+# Large raw source video (>100MB GitHub limit); optimized public/bgvid.mp4 is tracked
 bgvid.MP4
-public/bgvid.mp4

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, FileText, Radio, ArrowUpRight } from 'lucide-react';
+import { FileText, Radio, ArrowUpRight } from 'lucide-react';
 import KurukshetraLogo from './KurukshetraLogo';
 
 export default function Footer() {
@@ -12,11 +12,10 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2 text-[var(--color-primary-flame)] font-bold">
               <span className="h-2 w-2 rounded-full bg-[var(--color-primary-flame)]" />
-              OFFICIAL FESTIVAL PORTAL • FEB 18–21, 2027
+              OFFICIAL FESTIVAL PORTAL • 22ND–26TH JANUARY 2027
             </span>
             <span className="hidden sm:inline-flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[var(--color-primary-flame)]" />
-              FLAME UNIVERSITY, LAVALE, PUNE
+              FLAME UNIVERSITY CAMPUS
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -33,11 +32,11 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             <Link to="/" className="flex items-center gap-3.5 group">
-              <div className="relative flex shrink-0 items-center justify-center rounded-full shadow-[0_0_24px_rgba(254,90,0,0.35)] transition-transform group-hover:scale-105">
-                <KurukshetraLogo className="h-12 w-12" />
+              <div className="relative flex shrink-0 items-center justify-center rounded-full transition-transform group-hover:scale-105">
+                <KurukshetraLogo className="h-14 w-14" />
               </div>
               <div className="flex flex-col">
-                <span className="font-horizon text-lg sm:text-xl font-black uppercase text-white tracking-wider">
+                <span className="font-horizon text-lg sm:text-xl font-black uppercase text-white tracking-wider whitespace-nowrap">
                   FLAME <span className="text-[var(--color-primary-flame)]">KURUKSHETRA</span>
                 </span>
                 <span className="text-xs uppercase tracking-[0.2em] text-white/55 font-medium">
@@ -47,7 +46,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-white/65 leading-relaxed max-w-sm font-normal">
-              The ultimate multi-disciplinary collegiate sports, cultural, management, and esports battleground. Over 50+ universities, 2,500+ athletes, and ₹10L+ in cash prizes across four intense championship days.
+              The ultimate multi-disciplinary collegiate sports, cultural, and management events battleground. Over 50+ universities, 2,500+ athletes, and ₹10L+ in cash prizes across five intense championship days.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -81,19 +80,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/events" className="text-white/70 hover:text-white transition flex items-center justify-between">
+                  <span>All Events Directory</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/schedule" className="text-white/70 hover:text-white transition flex items-center justify-between">
                   <span>Tournament Schedule</span>
                 </Link>
               </li>
               <li>
                 <Link to="/live-events" className="text-white/70 hover:text-white transition flex items-center justify-between">
-                  <span>Live Scores & Tally</span>
+                  <span>Live Scores &amp; Tally</span>
                   <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-primary-flame)]" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/live-events/ultimate-frisbee-final" className="text-white/70 hover:text-white transition flex items-center justify-between">
-                  <span>Match Center</span>
                 </Link>
               </li>
               <li>
@@ -108,41 +107,36 @@ export default function Footer() {
           {/* Nav Links Column 2: Archive & Community */}
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)]">
-              People & Media
+              People &amp; Media
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
                 <Link to="/committee" className="text-white/70 hover:text-white transition">
-                  Committee & Heads
+                  Meet the OC
                 </Link>
               </li>
               <li>
                 <Link to="/album" className="text-white/70 hover:text-white transition">
-                  Photo Vault & Memories
+                  Photo Vault &amp; Memories
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-white/70 hover:text-white transition">
-                  Fest Stories & News
+                  Fest Stories &amp; News
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-white/70 hover:text-white transition">
-                  Contact & War Room
-                </Link>
-              </li>
-              <li>
-                <Link to="/admin" className="text-white/70 hover:text-white transition">
-                  Admin Scorer Portal
+                  Contact &amp; War Room
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Nav Links Column 3: Essentials & Support */}
+          {/* Nav Links Column 3: Social & Support */}
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)]">
-              Support & Guidelines
+              Connect &amp; Support
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
@@ -151,19 +145,34 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-white/70 hover:text-white transition">
-                  Contingent Concierge Desk
-                </Link>
+                <a
+                  href="https://www.instagram.com/flamekurukshetra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition"
+                >
+                  Instagram (@flamekurukshetra)
+                </a>
               </li>
               <li>
-                <span className="text-white/50 cursor-not-allowed">
-                  Campus Rulebooks (PDF)
-                </span>
+                <a
+                  href="https://www.linkedin.com/in/flamekurukshetra2027/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition"
+                >
+                  LinkedIn Official
+                </a>
               </li>
               <li>
-                <span className="text-white/50 cursor-not-allowed">
-                  Emergency Medical Protocol
-                </span>
+                <a
+                  href="https://www.youtube.com/@KurukshetraFLAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition"
+                >
+                  YouTube (@KurukshetraFLAME)
+                </a>
               </li>
             </ul>
           </div>
@@ -175,7 +184,7 @@ export default function Footer() {
             © 2027 FLAME University Kurukshetra. All Rights Reserved.
           </div>
           <div className="flex items-center gap-6">
-            <span>FLAME UNIVERSITY CAMPUS, LAVALE, PUNE, MAHARASHTRA 412115</span>
+            <span>FLAME UNIVERSITY CAMPUS • 22ND–26TH JANUARY 2027</span>
           </div>
         </div>
       </div>

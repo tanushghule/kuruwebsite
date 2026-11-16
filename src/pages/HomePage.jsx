@@ -11,7 +11,6 @@ import {
   Camera,
   ShieldCheck,
   UserPlus,
-  Flame,
   Clock,
   ChevronRight,
   Award,
@@ -24,8 +23,8 @@ import {
 } from '../data/websiteContent';
 import { cn } from '../utils/cn';
 
-// Target Kickoff: Feb 18, 2027 09:00:00 IST
-const TARGET_DATE = new Date('2027-02-18T09:00:00+05:30').getTime();
+// Target Kickoff: 22nd January 2027 09:00:00 IST (Page 4 Fix)
+const TARGET_DATE = new Date('2027-01-22T09:00:00+05:30').getTime();
 
 function useCountdown(targetTime) {
   const calculate = () => {
@@ -82,7 +81,6 @@ function SectionWaveDivider({ topColor = '#1A1D27', bottomColor = '#F4F1E8', fli
 }
 
 export default function HomePage() {
-  // Default to 'cultural' as requested ("Show the least, which is Cultural. Show one of each category.")
   const [selectedCategory, setSelectedCategory] = useState('cultural');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedEventModal, setSelectedEventModal] = useState(null);
@@ -113,7 +111,6 @@ export default function HomePage() {
     }
 
     if (selectedCategory === 'mix') {
-      // 1 representative from Cultural, Sports, and Management/Esports
       const oneCultural = SCHEDULE_EVENTS.find((e) => e.category === 'cultural');
       const oneSports = SCHEDULE_EVENTS.find((e) => e.category === 'sports');
       const oneManagement = SCHEDULE_EVENTS.find((e) => e.category === 'management');
@@ -123,19 +120,13 @@ export default function HomePage() {
     return SCHEDULE_EVENTS.filter((ev) => ev.category === selectedCategory).slice(0, 3);
   }, [selectedCategory, searchQuery]);
 
-  // Top 6 committee heads for the Route du Rhum ".skippers" portrait showcase
-  const featuredHeads = useMemo(() => COMMITTEE_HEADS.slice(0, 6), []);
-
-  // Top 3 photo highlights for the Route du Rhum ".actus" 7fr + 5fr bento showcase
-  const featuredPhotos = useMemo(() => ALBUM_MEDIA.slice(0, 3), []);
+  // Highlighted photos for the clickable Vault collage
+  const collagePhotos = useMemo(() => ALBUM_MEDIA.slice(0, 6), []);
 
   return (
     <div className="min-h-screen w-full bg-[#09090B] text-white">
       {/* =====================================================================
           SECTION 1: FULL-BLEED BACKGROUND VIDEO HERO (bgvid.mp4)
-          - Slight black overlay on top of bgvid.mp4
-          - Removed top date/location orange beeping dot pill
-          - Wide Bold Poppins Hero Typography + Ultra-Prominent Register CTA
       ===================================================================== */}
       <section className="relative min-h-[86vh] sm:min-h-[90vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10 bg-black">
         {/* Background Video (bgvid.mp4) */}
@@ -158,10 +149,8 @@ export default function HomePage() {
 
         {/* Hero Center Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center flex flex-col items-center">
-          {/* Skewed Route du Rhum Accent Bar */}
           <span className="rdr-trait mb-4 sm:mb-5" />
 
-          {/* Main Wide Bold Poppins Headline */}
           <h1 className="font-horizon-wide text-[2rem] xs:text-[2.35rem] sm:text-6xl lg:text-7xl xl:text-[5.25rem] font-black uppercase tracking-[0.03em] sm:tracking-[0.06em] text-white leading-[1.06] drop-shadow-[0_8px_30px_rgba(0,0,0,0.7)]">
             FLAME{' '}
             <span className="block sm:inline text-[var(--color-primary-flame)]">
@@ -174,7 +163,7 @@ export default function HomePage() {
           </p>
 
           <p className="mt-4 sm:mt-5 max-w-2xl text-xs xs:text-sm sm:text-base lg:text-lg text-white/80 font-normal leading-relaxed px-1">
-            Where Western India&apos;s finest collegiate athletes, artists, strategists, and esports squads converge across four electrifying days of championship glory.
+            Where India&apos;s finest collegiate athletes, artists, and management minds converge across five electrifying days of championship glory.
           </p>
 
           {/* Most Prominent Element: Register Now CTA */}
@@ -189,7 +178,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              to="/schedule"
+              to="/events"
               className="rdr-btn inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-[0.1em] text-xs sm:text-sm px-6 sm:px-7 py-3.5 sm:py-5 transition w-full sm:w-auto"
             >
               <Calendar className="w-4 h-4 text-[var(--color-primary-flame)]" />
@@ -200,27 +189,28 @@ export default function HomePage() {
       </section>
 
       {/* =====================================================================
-          SECTION 2: COUNTDOWN TO KICKOFF (Replaces "Current Live Arenas")
-          - Background: Elevated Dark Slate (#12141C)
-          - Route du Rhum ".hv-faits" skewed glassmorphic telemetry blocks
+          SECTION 2: COUNTDOWN SECTION (Page 4 Fix)
+          - Title: "Official countdown to FLAME Kurukshetra 2027"
+          - Date: "22nd-26th January"
+          - Removed "Lavale, Pune"
       ===================================================================== */}
       <section className="relative bg-[#12141C] border-b border-white/10 py-10 sm:py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Header */}
-          <div className="text-center lg:text-left max-w-md">
+          <div className="text-center lg:text-left max-w-lg">
             <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.2em] text-[var(--color-primary-flame)] mb-2">
               <Clock className="w-4 h-4" />
-              <span>OFFICIAL COUNTDOWN TO TORCH LIGHTING</span>
+              <span>22ND–26TH JANUARY 2027</span>
             </div>
-            <h2 className="font-horizon text-2xl sm:text-3xl font-black uppercase tracking-wide text-white">
-              THE ARENA IGNITES IN
+            <h2 className="font-horizon text-xl sm:text-2xl lg:text-3xl font-black uppercase tracking-wide text-white leading-snug">
+              Official countdown to FLAME Kurukshetra 2027
             </h2>
-            <p className="mt-1.5 text-xs sm:text-sm text-white/65 font-normal">
-              February 18 – 21, 2027 • FLAME University Campus, Lavale, Pune
+            <p className="mt-1.5 text-xs sm:text-sm text-white/70 font-normal">
+              22nd–26th January • FLAME University Campus
             </p>
           </div>
 
-          {/* Center: Route du Rhum Skewed Countdown Blocks */}
+          {/* Center: Skewed Countdown Blocks */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-5 w-full lg:w-auto">
             {[
               { value: String(countdown.days).padStart(2, '0'), label: 'DAYS', accent: '#FE5A00' },
@@ -261,8 +251,6 @@ export default function HomePage() {
 
       {/* =====================================================================
           SECTION 3: CREDIBILITY COUNTERS SECTION
-          - Background: Slightly Gray / Charcoal Slate (#1A1D27) with subtle grid
-          - Dedicated section for 50+ Universities, 2.5K+ Athletes, 20+ Disciplines, ₹10L+ Prize Pool
       ===================================================================== */}
       <section className="relative bg-[#1A1D27] bg-blueprint-grid py-14 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-white/10">
         <div className="max-w-7xl mx-auto">
@@ -277,11 +265,11 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="text-sm text-white/70 max-w-md font-normal">
-              Four days of high-stakes inter-university rivalries across Olympic-grade turfs, indoor hardwood courts, amphitheater stages, and LAN arenas.
+              Five days of high-stakes inter-university rivalries across Olympic-grade turfs, indoor hardwood courts, amphitheater stages, and management war rooms.
             </p>
           </div>
 
-          {/* 4 Credibility Counter Cards (2x2 on Mobile, 4 cols on Desktop) */}
+          {/* 4 Credibility Counter Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
             {[
               {
@@ -293,13 +281,13 @@ export default function HomePage() {
               {
                 number: '2.5K+',
                 label: 'COLLEGIATE ATHLETES',
-                sub: 'Players, performers, founders, and esports rosters on campus',
+                sub: 'Players, performers, and strategists competing on campus',
                 accent: '#FAAD36',
               },
               {
                 number: '20+',
                 label: 'FLAGSHIP DISCIPLINES',
-                sub: 'Spanning Sports, Cultural, Management, and Esports arenas',
+                sub: 'Spanning Sports, Cultural, and Management Events arenas',
                 accent: '#FFFFFF',
               },
               {
@@ -334,14 +322,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Wave Separator from Dark Gray (#1A1D27) to Warm Off-White (#F4F1E8) */}
       <SectionWaveDivider topColor="#1A1D27" bottomColor="#F4F1E8" />
 
       {/* =====================================================================
-          SECTION 4: DISCIPLINES & EVENTS (Route du Rhum Light Contrast Section)
-          - Background: Warm Off-White / Light Gray (#F4F1E8) with dark ink text (#0E111D)
-          - Shows ONLY TOP 3 IN ONE LINE (grid-cols-1 md:grid-cols-3)
-          - Category buttons: Cultural, Sports, Management, Esports + 1 of Each + Search bar
+          SECTION 4: DISCIPLINES & EVENTS (Page 5 Fix)
+          - Removed "Esports"
+          - Renamed "Management" to "Management Events"
       ===================================================================== */}
       <section
         id="event-search"
@@ -359,7 +345,7 @@ export default function HomePage() {
                 DISCIPLINES &amp; <span className="text-[var(--color-primary-flame)]">EVENTS</span>
               </h2>
               <p className="mt-2 text-sm sm:text-base text-[#0E111D]/70 max-w-xl font-normal">
-                Switch between categories or search below to inspect the top featured events. All disciplines are curated with official rulebooks and cash prizes.
+                Switch between categories or search below to inspect the top featured events across Sports, Cultural, and Management Events.
               </p>
             </div>
 
@@ -371,7 +357,7 @@ export default function HomePage() {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search football, dance, valorant..."
+                  placeholder="Search football, dance, management..."
                   className="w-full rounded-xl bg-white border border-[#0E111D]/15 pl-11 pr-4 py-3 text-sm text-[#0E111D] placeholder:text-[#0E111D]/45 font-medium focus:outline-none focus:border-[var(--color-primary-flame)] shadow-sm"
                 />
                 {searchQuery && (
@@ -387,14 +373,13 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Category Filter Buttons: Cultural, Sports, Management, Esports, plus 1-of-Each */}
+          {/* Category Filter Buttons: Cultural, Sports, Management Events, 1 of Each Category (Esports removed per Page 5) */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 sm:mb-10 pb-5 sm:pb-6 border-b border-[#0E111D]/10">
             <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 sm:pb-0 sm:flex-wrap">
               {[
                 { id: 'cultural', label: 'Cultural' },
                 { id: 'sports', label: 'Sports' },
-                { id: 'management', label: 'Management' },
-                { id: 'esports', label: 'Esports' },
+                { id: 'management', label: 'Management Events' },
                 { id: 'mix', label: '1 of Each Category' },
               ].map((cat) => {
                 const isActive = !searchQuery && selectedCategory === cat.id;
@@ -420,10 +405,10 @@ export default function HomePage() {
             </div>
 
             <Link
-              to="/schedule"
+              to="/events"
               className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)] hover:underline shrink-0"
             >
-              <span>View Full Schedule &amp; All Events</span>
+              <span>View All Events Directory</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
@@ -435,7 +420,7 @@ export default function HomePage() {
                 No events matched &ldquo;{searchQuery}&rdquo;
               </p>
               <p className="text-sm text-[#0E111D]/60 mt-1">
-                Try searching for Football, Basketball, Band, Dance, Shark Arena, or Valorant.
+                Try searching for Football, Basketball, Band, Dance, or Shark Arena.
               </p>
               <button
                 type="button"
@@ -456,7 +441,6 @@ export default function HomePage() {
                   className="rdr-card group bg-white border border-[#0E111D]/10 overflow-hidden shadow-[0_14px_34px_rgba(14,17,29,0.08)] hover:shadow-[0_20px_45px_rgba(254,90,0,0.18)] transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
                 >
                   <div>
-                    {/* Dummy Event Image */}
                     <div className="relative h-56 w-full overflow-hidden bg-[#12141C]">
                       <img
                         src={event.image}
@@ -474,7 +458,6 @@ export default function HomePage() {
                       </span>
                     </div>
 
-                    {/* Card Body */}
                     <div className="p-6">
                       <h3 className="font-horizon text-xl font-black uppercase tracking-wide text-[#0E111D] group-hover:text-[var(--color-primary-flame)] transition-colors">
                         {event.name}
@@ -495,7 +478,6 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  {/* Card Footer CTAs */}
                   <div className="px-6 pb-6 flex items-center gap-2.5">
                     <button
                       type="button"
@@ -519,13 +501,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Wave Separator from Warm Off-White (#F4F1E8) to Charcoal Slate (#141722) */}
       <SectionWaveDivider topColor="#F4F1E8" bottomColor="#141722" flip />
 
       {/* =====================================================================
-          SECTION 5: ABOUT SECTION ("Where Legends Rise & Rivalries Are Forged")
-          - Divided into 2 parts: Left = Text & Pillars, Right = Framed Dummy Image
-          - Background: Charcoal Slate (#141722)
+          SECTION 5: ABOUT SECTION (Page 7 Fix)
+          - Photo updated to FLAME Campus (/flamecampusphoto.jpg)
+          - Updated About FLAME Kurukshetra main body content
       ===================================================================== */}
       <section className="relative bg-[#141722] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-white/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -542,11 +523,11 @@ export default function HomePage() {
               </span>
             </h2>
 
-            <p className="mt-5 text-sm sm:text-base text-white/80 font-normal leading-relaxed">
-              Set across the sprawling 60-acre lush valley campus of FLAME University in Lavale, Pune, Kurukshetra is more than a tournament—it is Western India&apos;s flagship inter-collegiate crucible.
+            <p className="mt-5 text-sm sm:text-base text-white/85 font-normal leading-relaxed">
+              FLAME Kurukshetra is the flagship annual inter-collegiate festival of FLAME University—an exhilarating five-day convergence of Sports, Cultural, and Management Events where top universities across India compete for ultimate glory.
             </p>
-            <p className="mt-3.5 text-sm sm:text-base text-white/70 font-normal leading-relaxed">
-              By day, national university contingents clash across FIFA-standard floodlit turfs, indoor wooden basketball courts, panoramic padel arenas, and high-stakes venture boardrooms. By night, the campus amphitheater transforms into an electric cultural festival with headline concerts, street dance cyphers, and pro-shows.
+            <p className="mt-3.5 text-sm sm:text-base text-white/75 font-normal leading-relaxed">
+              Hosted across FLAME University&apos;s world-class athletic turfs, Olympic-size swimming pool, synthetic courts, indoor sports complex, and open-air amphitheater from 22nd to 26th January 2027, Kurukshetra unites fierce championship spirit with unforgettable campus camaraderie, artist pro-nights, and intellectual showdowns.
             </p>
 
             {/* 3 Compact Feature Pillars */}
@@ -563,19 +544,19 @@ export default function HomePage() {
               <div className="rounded-xl bg-white/[0.04] border border-white/10 p-4">
                 <Sparkles className="w-5 h-5 text-[var(--color-accent-yellow)] mb-2" />
                 <div className="text-xs font-extrabold uppercase tracking-wider text-white">
-                  Pro-Nights &amp; Stage
+                  Culturals &amp; Stage
                 </div>
                 <p className="text-xs text-white/60 mt-1 font-normal">
-                  Concert-grade amphitheater evenings, band battles &amp; runway walks.
+                  Concert-grade amphitheater evenings, band battles &amp; dance showcases.
                 </p>
               </div>
               <div className="rounded-xl bg-white/[0.04] border border-white/10 p-4">
                 <ShieldCheck className="w-5 h-5 text-emerald-400 mb-2" />
                 <div className="text-xs font-extrabold uppercase tracking-wider text-white">
-                  Full Hospitality
+                  Management Arena
                 </div>
                 <p className="text-xs text-white/60 mt-1 font-normal">
-                  Partnered hotel stays, shuttle fleets &amp; athlete nutrition pipelines.
+                  High-stakes venture pitches, crisis simulations &amp; trading floors.
                 </p>
               </div>
             </div>
@@ -598,22 +579,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right Part: Framed Dummy Feature Image */}
+          {/* Right Part: Official FLAME Campus Photo (flamecampusphoto.jpg — Page 7 Fix) */}
           <div className="lg:col-span-6 relative">
             <div className="rdr-card relative overflow-hidden border-2 border-white/15 bg-[#09090B] shadow-[0_24px_60px_rgba(0,0,0,0.6)]">
               <img
-                src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80"
-                alt="FLAME Kurukshetra Stadium & Amphitheater"
+                src="/flamecampusphoto.jpg"
+                alt="FLAME University Campus Sports Complex & Turf"
                 loading="lazy"
                 className="w-full h-[360px] sm:h-[460px] object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
 
               {/* Bottom Overlay Caption inside Image */}
               <div className="absolute bottom-5 left-5 right-5 flex flex-col sm:flex-row sm:items-end justify-between gap-4 bg-black/75 backdrop-blur-md border border-white/15 rounded-2xl p-4">
                 <div>
                   <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[var(--color-primary-flame)]">
-                    LAVALE VALLEY CAMPUS • PUNE
+                    FLAME UNIVERSITY CAMPUS
                   </span>
                   <div className="font-horizon text-base sm:text-lg font-black uppercase text-white mt-0.5">
                     60-Acre Championship Arena
@@ -621,7 +602,7 @@ export default function HomePage() {
                 </div>
                 <span className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--color-primary-flame)] px-3 py-1.5 text-xs font-extrabold uppercase text-white shrink-0">
                   <Zap className="w-3.5 h-3.5" />
-                  Feb 18–21, 2027
+                  22nd–26th Jan 2027
                 </span>
               </div>
             </div>
@@ -630,13 +611,11 @@ export default function HomePage() {
       </section>
 
       {/* =====================================================================
-          SECTION 6: ORGANIZING COMMITTEE & LAST YEAR'S HIGHLIGHTS
-          - Part A: Organizing Committee in Route du Rhum ".skippers" portrait style
-          - Part B: Last Year's Photo Vault in Route du Rhum ".actus" 7fr + 5fr bento grid
+          SECTION 6: ORGANIZING COMMITTEE (All 17 Visible) & PHOTO VAULT COLLAGE
       ===================================================================== */}
       <section className="relative bg-[#0B0C10] py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-white/10">
         <div className="max-w-7xl mx-auto">
-          {/* PART A: ORGANIZING COMMITTEE SHOWCASE */}
+          {/* PART A: ALL 17 ORGANIZING COMMITTEE MEMBERS COLLAGE */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <span className="rdr-trait mb-3" />
@@ -652,24 +631,18 @@ export default function HomePage() {
               className="rdr-btn inline-flex items-center gap-2 border border-white/20 bg-white/5 hover:bg-[var(--color-primary-flame)] hover:border-[var(--color-primary-flame)] px-5 py-3 text-xs font-extrabold uppercase tracking-wider text-white transition self-start sm:self-auto"
             >
               <Users className="w-4 h-4" />
-              <span>Meet All 17 Festival Heads</span>
+              <span>Meet the OC</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* Mobile Swipe Hint */}
-          <div className="lg:hidden flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-white/50 mb-3">
-            <span>Swipe horizontally to explore heads</span>
-            <span className="text-[var(--color-primary-flame)]">→</span>
-          </div>
-
-          {/* Route du Rhum ".skippers" 6-Card Portrait Rail (Snap-Scroll on Mobile, 6 Columns on Desktop) */}
-          <div className="flex lg:grid lg:grid-cols-6 gap-4 sm:gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2">
-            {featuredHeads.map((head) => (
+          {/* All 17 Committee Members Collage Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4">
+            {COMMITTEE_HEADS.map((head) => (
               <Link
                 key={head.id}
                 to="/committee"
-                className="rdr-card group relative shrink-0 w-[68vw] xs:w-[54vw] sm:w-[240px] lg:w-auto aspect-[4/5] overflow-hidden bg-[#161923] border border-white/10 snap-start shadow-xl"
+                className="rdr-card-sm group relative aspect-[4/5] overflow-hidden bg-[#161923] border border-white/10 hover:border-[var(--color-primary-flame)] shadow-lg transition-all duration-300"
               >
                 <img
                   src={head.photo}
@@ -684,25 +657,25 @@ export default function HomePage() {
                       'linear-gradient(180deg, rgba(9,9,11,0.05) 35%, rgba(9,9,11,0.92) 100%)',
                   }}
                 />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-block rounded bg-[var(--color-primary-flame)] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-white">
+                <div className="absolute bottom-3 left-3 right-3">
+                  <span className="inline-block rounded bg-[var(--color-primary-flame)] px-2 py-0.5 text-[9px] font-extrabold uppercase tracking-wider text-white truncate max-w-full">
                     {head.idBadge}
                   </span>
-                  <h3 className="font-horizon text-base sm:text-lg font-black uppercase text-white mt-1.5 leading-tight">
+                  <h3 className="font-horizon text-sm sm:text-base font-black uppercase text-white mt-1 leading-tight truncate">
                     {head.name}
                   </h3>
-                  <p className="text-xs text-white/70 font-normal mt-0.5 truncate">
-                    {head.wingLabel}
+                  <p className="text-[11px] text-white/70 font-normal truncate">
+                    {head.role}
                   </p>
                 </div>
               </Link>
             ))}
           </div>
 
-          {/* Divider Line Between Committee and Last Year's Highlights */}
+          {/* Divider Line */}
           <div className="my-16 sm:my-20 h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent" />
 
-          {/* PART B: LAST YEAR'S HIGHLIGHTS / PHOTO VAULT (Route du Rhum 7fr + 5fr Asymmetric Bento) */}
+          {/* PART B: LAST YEAR'S HIGHLIGHTS COLLAGE (Clicking Anywhere Redirects to /album) */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <span className="rdr-trait mb-3" />
@@ -723,42 +696,19 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* 7fr + 5fr Bento Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Left Large Featured Highlight (7 cols) */}
-            {featuredPhotos[0] && (
-              <Link
-                to="/album"
-                className="rdr-card group relative lg:col-span-7 min-h-[320px] sm:min-h-[420px] overflow-hidden border border-white/10 bg-[#141722] shadow-2xl"
-              >
-                <img
-                  src={featuredPhotos[0].image}
-                  alt={featuredPhotos[0].title}
-                  loading="lazy"
-                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <span className="inline-block rounded-md bg-[var(--color-primary-flame)] px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-white">
-                    {featuredPhotos[0].category} • Featured Moment
-                  </span>
-                  <h3 className="font-horizon text-xl sm:text-2xl lg:text-3xl font-black uppercase text-white mt-2">
-                    {featuredPhotos[0].title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/75 mt-1 font-normal">
-                    Captured by {featuredPhotos[0].photographer} • Click to browse full high-res gallery
-                  </p>
-                </div>
-              </Link>
-            )}
-
-            {/* Right 2 Stacked Cards (5 cols) */}
-            <div className="lg:col-span-5 flex flex-col gap-6">
-              {featuredPhotos.slice(1, 3).map((item) => (
-                <Link
+          {/* Entire Collage Wrapped in Link to /album */}
+          <Link
+            to="/album"
+            className="group block rounded-3xl border border-white/15 bg-[#12141C] p-3 sm:p-5 hover:border-[var(--color-primary-flame)] transition-all shadow-2xl"
+          >
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+              {collagePhotos.map((item, idx) => (
+                <div
                   key={item.id}
-                  to="/album"
-                  className="rdr-card-sm group relative flex-1 min-h-[195px] overflow-hidden border border-white/10 bg-[#141722] shadow-xl"
+                  className={cn(
+                    'relative overflow-hidden rounded-2xl bg-black border border-white/10',
+                    idx === 0 ? 'col-span-2 md:col-span-2 h-56 sm:h-72' : 'h-48 sm:h-72'
+                  )}
                 >
                   <img
                     src={item.image}
@@ -766,25 +716,31 @@ export default function HomePage() {
                     loading="lazy"
                     className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <span className="inline-block rounded bg-white/15 backdrop-blur-md px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-[var(--color-accent-yellow)]">
-                      {item.category}
-                    </span>
-                    <h4 className="font-horizon text-base sm:text-lg font-black uppercase text-white mt-1">
-                      {item.title}
-                    </h4>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                  <div className="absolute bottom-3.5 left-3.5 right-3.5 flex items-end justify-between gap-2">
+                    <div>
+                      <span className="inline-block rounded bg-[var(--color-primary-flame)] px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-white">
+                        {item.category}
+                      </span>
+                      <h4 className="font-horizon text-sm sm:text-base font-bold uppercase text-white mt-1 line-clamp-1">
+                        {item.title}
+                      </h4>
+                    </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
-          </div>
+            <div className="mt-4 flex items-center justify-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)] py-1">
+              <Camera className="w-4 h-4" />
+              <span>Click anywhere on collage to explore the complete Photo Vault</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </div>
+          </Link>
         </div>
       </section>
 
       {/* =====================================================================
-          SECTION 7: REGISTRATIONS CLOSING SOON (Route du Rhum ".promo" Banner)
-          - Vibrant Flame Orange Gradient Card with Diagonal Stripes & Visual Frame
+          SECTION 7: REGISTRATIONS CLOSING SOON BANNER
       ===================================================================== */}
       <section className="relative bg-[#141722] py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -795,11 +751,9 @@ export default function HomePage() {
                 'linear-gradient(118deg, #FF6B1A 0%, #FE5A00 48%, #C83E00 100%)',
             }}
           >
-            {/* Diagonal Stripe Texture */}
             <div className="absolute inset-0 bg-diagonal-stripes pointer-events-none" />
 
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-              {/* Left Promo Copy & CTA */}
               <div className="lg:col-span-7 text-white">
                 <span className="rdr-trait-white mb-4" />
                 <div className="inline-flex items-center gap-2 rounded-full bg-black/25 px-3.5 py-1 text-xs font-extrabold uppercase tracking-[0.18em] text-white mb-3">
@@ -810,7 +764,7 @@ export default function HomePage() {
                   REGISTRATIONS CLOSING SOON
                 </h2>
                 <p className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 font-normal max-w-xl leading-relaxed">
-                  Secure your university&apos;s slot across Sports, Cultural, Management, and Esports brackets before brackets lock. Get priority campus hospitality and contingent passes.
+                  Secure your university&apos;s slot across Sports, Cultural, and Management Events before brackets lock. Get priority campus hospitality and contingent passes.
                 </p>
 
                 <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -831,11 +785,10 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Right Visual Card */}
               <div className="lg:col-span-5">
                 <div className="rdr-card-sm overflow-hidden border-2 border-white/30 bg-[#09090B] shadow-2xl relative">
                   <img
-                    src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=900&q=80"
+                    src="/flamecampusphoto.jpg"
                     alt="Register for FLAME Kurukshetra 2027"
                     loading="lazy"
                     className="w-full h-64 sm:h-72 object-cover object-center"
@@ -847,7 +800,7 @@ export default function HomePage() {
                         OFFICIAL PORTAL
                       </div>
                       <div className="font-horizon text-sm sm:text-base font-black uppercase">
-                        FEB 18–21, 2027 • FLAME PUNE
+                        22ND–26TH JAN 2027 • FLAME UNIVERSITY
                       </div>
                     </div>
                     <span className="rounded-lg bg-white text-[#09090B] px-3 py-1 text-xs font-extrabold uppercase">

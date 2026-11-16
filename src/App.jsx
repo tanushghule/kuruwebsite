@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 import HomePage from './pages/HomePage';
+import EventsPage from './pages/EventsPage';
 import SchedulePage from './pages/SchedulePage';
 import AlbumPage from './pages/AlbumPage';
 import CommitteePage from './pages/CommitteePage';
@@ -157,6 +158,9 @@ export default function App() {
           <Routes>
             {/* Merged Home Page */}
             <Route path="/" element={<HomePage />} />
+
+            {/* Dedicated Events Directory Page (Page 3 Fix) */}
+            <Route path="/events" element={<EventsPage />} />
 
             {/* Merged Schedule Page */}
             <Route path="/schedule" element={<SchedulePage />} />

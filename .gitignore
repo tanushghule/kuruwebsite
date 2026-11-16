@@ -16,6 +16,13 @@ Thumbs.db
 # Temporary extraction directory (original archives preserved in alt/)
 alt/extracted/
 
-# Ignore only the 138MB raw root video, explicitly include public/bgvid.mp4
+# Ignore only the root reference uploads; public/ copies are tracked & deployed
 /bgvid.MP4
+/FK27 Website Review.pdf
+/events1.png
+/events2.png
+/flamecampusphoto.jpg
+/kurukshetralogo_official.png
 !/public/bgvid.mp4
+!/public/flamecampusphoto.jpg
+!/public/kurukshetralogo_official.png

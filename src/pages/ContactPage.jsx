@@ -81,7 +81,7 @@ const STUDENT_POCS = [
     name: 'Participants HOD',
     role: 'Head of Participants & Contingent Relations',
     department: 'Participant Onboarding, Assistance & Check-Ins',
-    email: 'registrations.kurukshetra@flame.edu.in',
+    email: 'kurukshetra.registrations@flame.edu.in',
     phone: '+91 98193 64028',
     badge: 'PARTICIPANTS DESK',
     icon: Users,
@@ -380,7 +380,7 @@ export default function ContactPage() {
               },
               {
                 title: 'Contingent Registrations Desk',
-                email: 'registrations.kurukshetra@flame.edu.in',
+                email: 'kurukshetra.registrations@flame.edu.in',
                 desc: 'Contingent registrations, team slotting & participant verification queries',
               },
             ].map((desk) => (

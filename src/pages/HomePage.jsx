@@ -211,7 +211,7 @@ export default function HomePage() {
           </div>
 
           {/* Center: Skewed Countdown Blocks */}
-          <div className="grid grid-cols-4 gap-2 sm:gap-5 w-full lg:w-auto">
+          <div className="grid grid-cols-2 min-[370px]:grid-cols-4 gap-2 sm:gap-5 w-full lg:w-auto">
             {[
               { value: String(countdown.days).padStart(2, '0'), label: 'DAYS', accent: '#FE5A00' },
               { value: String(countdown.hours).padStart(2, '0'), label: 'HOURS', accent: '#FAAD36' },
@@ -437,7 +437,7 @@ export default function HomePage() {
         ) : (
           <div className="relative w-full overflow-hidden py-2">
             <div
-              className="flex w-max gap-5 sm:gap-7 px-4 sm:px-6 hover:[animation-play-state:paused]"
+              className="flex w-max gap-4 sm:gap-7 px-4 sm:px-6 hover:[animation-play-state:paused] active:[animation-play-state:paused]"
               style={{
                 animation: `kuruEventsMarquee ${Math.max(45, displayedEvents.length * 4.5)}s linear infinite`,
               }}
@@ -446,7 +446,7 @@ export default function HomePage() {
                 <Link
                   key={`${event.id}-${idx}`}
                   to="/events"
-                  className="group relative w-[270px] sm:w-[350px] h-[340px] sm:h-[420px] shrink-0 rounded-2xl overflow-hidden bg-[#0E111D] border border-[#0E111D]/15 shadow-[0_14px_34px_rgba(14,17,29,0.16)] hover:shadow-[0_22px_50px_rgba(254,90,0,0.28)] transition-all duration-300"
+                  className="group relative w-[225px] min-[390px]:w-[250px] sm:w-[350px] h-[290px] min-[390px]:h-[320px] sm:h-[420px] shrink-0 rounded-2xl overflow-hidden bg-[#0E111D] border border-[#0E111D]/15 shadow-[0_14px_34px_rgba(14,17,29,0.16)] hover:shadow-[0_22px_50px_rgba(254,90,0,0.28)] transition-all duration-300"
                 >
                   <img
                     src={event.image}
@@ -463,8 +463,8 @@ export default function HomePage() {
                     }}
                   />
                   {/* Event Title Overlaid on the Image */}
-                  <div className="absolute inset-0 p-6 sm:p-7 flex flex-col justify-end">
-                    <h3 className="font-horizon text-xl sm:text-2xl font-black uppercase tracking-wide text-white group-hover:text-[var(--color-primary-flame)] transition-colors leading-snug drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
+                  <div className="absolute inset-0 p-4 sm:p-7 flex flex-col justify-end">
+                    <h3 className="font-horizon text-base sm:text-2xl font-black uppercase tracking-wide text-white group-hover:text-[var(--color-primary-flame)] transition-colors leading-snug drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
                       {event.name}
                     </h3>
                   </div>
@@ -638,14 +638,14 @@ export default function HomePage() {
                   className="absolute inset-0"
                   style={{
                     background:
-                      'linear-gradient(180deg, rgba(9,9,11,0.02) 45%, rgba(9,9,11,0.92) 100%)',
+                      'linear-gradient(180deg, rgba(9,9,11,0.0) 42%, rgba(9,9,11,0.72) 72%, rgba(9,9,11,0.96) 100%)',
                   }}
                 />
-                <div className="absolute bottom-2 left-2 right-2 sm:bottom-3 sm:left-3 sm:right-3">
-                  <h3 className="font-horizon text-[10px] min-[380px]:text-xs sm:text-sm font-black uppercase text-white leading-tight truncate">
+                <div className="absolute bottom-1.5 left-1.5 right-1.5 sm:bottom-3 sm:left-3 sm:right-3">
+                  <h3 className="font-horizon text-[9.5px] min-[380px]:text-[11px] sm:text-sm font-black uppercase text-white leading-[1.15] break-words">
                     {head.name}
                   </h3>
-                  <p className="text-[9px] sm:text-[11px] text-[var(--color-primary-flame)] font-bold truncate mt-0.5">
+                  <p className="text-[8px] min-[380px]:text-[9.5px] sm:text-[11px] text-[var(--color-primary-flame)] font-bold leading-[1.15] break-words mt-0.5">
                     {head.role}
                   </p>
                 </div>

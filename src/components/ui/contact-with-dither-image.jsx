@@ -322,7 +322,7 @@ export function ContactWithDitherImage({
           <div className="order-2 lg:order-1 col-span-1 lg:col-span-3 mx-auto w-full max-w-[160px] sm:max-w-[240px] lg:max-w-[280px] lg:-rotate-2 bg-white p-1.5 sm:p-3 pb-2.5 sm:pb-5 shadow-[0_14px_35px_rgba(0,0,0,0.25)] border border-black/15 dark:border-white/20 rounded-sm">
             <div className="relative aspect-[4/4] sm:aspect-[4/5] w-full overflow-hidden bg-black">
               <DitherImageCanvas
-                imageSrc="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=700&q=80"
+                imageSrc="/assets/events/music-group.jpg"
                 alt="Kurukshetra Pro-Night Stage Dither"
                 flameTint={flameMode}
                 pixelScale={pixelSize}
@@ -588,7 +588,7 @@ export function ContactWithDitherImage({
           <div className="order-3 col-span-1 lg:col-span-3 mx-auto w-full max-w-[160px] sm:max-w-[240px] lg:max-w-[280px] lg:rotate-2 bg-white p-1.5 sm:p-3 pb-2.5 sm:pb-5 shadow-[0_14px_35px_rgba(0,0,0,0.25)] border border-black/15 dark:border-white/20 rounded-sm">
             <div className="relative aspect-[4/4] sm:aspect-[4/5] w-full overflow-hidden bg-black">
               <DitherImageCanvas
-                imageSrc="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=80"
+                imageSrc="/assets/events/football.jpg"
                 alt="Kurukshetra Sports Floodlights Dither"
                 flameTint={flameMode}
                 pixelScale={pixelSize}

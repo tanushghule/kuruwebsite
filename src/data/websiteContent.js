@@ -1,9 +1,9 @@
 /**
- * FLAME Kurukshetra 2027 - Consolidated Data Registry
- * Updated per FK27 Website Review PDF (Pages 1 to 11):
- * - Dates: 22nd–26th January 2027
- * - Categories: Sports Events ('sports'), Cultural Events ('cultural'), Management Events ('management') — Esports removed
- * - Meet the OC Hierarchy: Row 1 = 3 Advisors (Farrokh Sir, Razmi Ma'am, Tamosi Ma'am), Row 2 = EC, Row 3+ = CC Heads
+ * FLAME Kurukshetra 2027 - Official Consolidated Data Registry
+ * Synced directly from:
+ * - Google Sheet: Final Events List (1WDlNxpschyBh2XUXal3ht1aYUtFLaOcH4eV2QhUAE8I)
+ * - Google Sheet: FK 2027 OC Data (1PrOTwfITd757dCh_rH8BmVZO--5WsidkTxhb08ItzLk)
+ * - Google Drive: website photos (1OJt-ZugtCQq32LRXcvWQPNrS8WbBQN8z) & Collage (1kAGtjvH1t_tADA14E6OJKYpL4gz7ZLnr)
  */
 
 // =========================================================================
@@ -16,7 +16,7 @@ export const FACULTY_ADVISORS = [
     role: "Faculty Advisor",
     tier: "advisor",
     wing: "advisor",
-    photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/ec-president.jpg",
     idBadge: "FACULTY ADVISOR",
     oneLiner: "Guiding the institutional vision, athletic excellence, and foundational values of FLAME Kurukshetra.",
     wingLabel: "Faculty Advisory Board",
@@ -28,7 +28,7 @@ export const FACULTY_ADVISORS = [
     role: "Faculty Advisor",
     tier: "advisor",
     wing: "advisor",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-logistics.jpg",
     idBadge: "FACULTY ADVISOR",
     oneLiner: "Mentoring the student secretariat across cultural programming, campus operations, and student governance.",
     wingLabel: "Faculty Advisory Board",
@@ -40,7 +40,7 @@ export const FACULTY_ADVISORS = [
     role: "Faculty Advisor",
     tier: "advisor",
     wing: "advisor",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-marketing.jpg",
     idBadge: "FACULTY ADVISOR",
     oneLiner: "Supporting inter-collegiate outreach, management conclaves, and academic-extracurricular synergy.",
     wingLabel: "Faculty Advisory Board",
@@ -49,55 +49,55 @@ export const FACULTY_ADVISORS = [
 ];
 
 // =========================================================================
-// 1B. EXECUTIVE COUNCIL (Second Row on Meet the OC — Page 11)
+// 1B. EXECUTIVE COUNCIL (Second Row on Meet the OC — Synced from FK 2027 OC Data)
 // =========================================================================
 export const EC_MEMBERS = [
   {
     id: "HEAD-01",
-    name: "Parth",
+    name: "Ayush Kumar",
     role: "Chairperson",
     tier: "ec",
     wing: "governance",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/oc/ayush-kumar.jpg",
     idBadge: "EXECUTIVE COUNCIL • CHAIRPERSON",
     oneLiner: "Steering overarching institutional alignment, festival strategy, and apex leadership for Kurukshetra 2027.",
     wingLabel: "Executive Council",
     roleClass: "role-ec",
     instagram: "flamekurukshetra",
-    email: "chairperson.kurukshetra@flame.edu.in"
+    email: "ayush.kumar@flame.edu.in"
   },
   {
     id: "HEAD-02",
-    name: "Khushi",
-    role: "General Secretary",
+    name: "Khushi Bhatia",
+    role: "Joint Secretary",
     tier: "ec",
     wing: "governance",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
-    idBadge: "EXECUTIVE COUNCIL • GEN SEC",
+    photo: "/assets/oc/khushi-bhatia.jpg",
+    idBadge: "EXECUTIVE COUNCIL • JOINT SECRETARY",
     oneLiner: "Orchestrating council administration, inter-university delegations, and multi-wing operational convergence.",
     wingLabel: "Executive Council",
     roleClass: "role-ec",
     instagram: "flamekurukshetra",
-    email: "gensec1.kurukshetra@flame.edu.in"
+    email: "khushi.bhatia@flame.edu.in"
   },
   {
     id: "HEAD-03",
-    name: "Ayush",
-    role: "General Secretary",
+    name: "Parthsarthi Goyal",
+    role: "Joint Secretary",
     tier: "ec",
     wing: "governance",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-    idBadge: "EXECUTIVE COUNCIL • GEN SEC",
+    photo: "/assets/heads/ec-secretary.jpg",
+    idBadge: "EXECUTIVE COUNCIL • JOINT SECRETARY",
     oneLiner: "Managing regulatory compliance, senate approvals, and grievance resolution frameworks across contingents.",
     wingLabel: "Executive Council",
     roleClass: "role-ec",
     instagram: "flamekurukshetra",
-    email: "gensec2.kurukshetra@flame.edu.in"
+    email: "parthsarthi.goyal@flame.edu.in"
   }
 ];
 
 // =========================================================================
-// 1C. CORE COMMITTEE (CC) HEADS (Third Row Onwards on Meet the OC — Page 11)
+// 1C. CORE COMMITTEE (CC) HEADS (Third Row Onwards — Synced from FK 2027 OC Data)
 // =========================================================================
 export const CC_HEADS = [
   {
@@ -106,27 +106,27 @@ export const CC_HEADS = [
     role: "Head of Admin & Logistics",
     tier: "cc",
     wing: "logistics",
-    photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-logistics.jpg",
     idBadge: "ADMIN & LOGISTICS",
     oneLiner: "Commanding heavy arena equipment staging, multi-arena transport flow, and round-the-clock logistics.",
-    wingLabel: "Admin & Logistics",
+    wingLabel: "Logistics Team",
     roleClass: "role-ops",
     instagram: "divyanshri_munot",
     email: "divyanshri.munot@flame.edu.in"
   },
   {
     id: "HEAD-05",
-    name: "Sid Shekhar",
+    name: "Siddharth Salunkhe",
     role: "Head of Hospitality",
     tier: "cc",
     wing: "hospitality",
-    photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-hospitality.jpg",
     idBadge: "HOSPITALITY",
     oneLiner: "Facilitating athlete lodging, nutrition dining pipelines, and dedicated concierges for visiting participants.",
-    wingLabel: "Hospitality & VIP",
+    wingLabel: "Hospitality Team",
     roleClass: "role-pr",
     instagram: "_sidshekhar_",
-    email: "sid.shekhar@flame.edu.in"
+    email: "siddharth.salunkhe@flame.edu.in"
   },
   {
     id: "HEAD-06",
@@ -134,10 +134,10 @@ export const CC_HEADS = [
     role: "Co-Head PR",
     tier: "cc",
     wing: "pr",
-    photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-marketing.jpg",
     idBadge: "CO-HEAD PR",
     oneLiner: "Spearheading national press outreach, external media relations, and public communications across university networks.",
-    wingLabel: "PR & Media",
+    wingLabel: "PR Team",
     roleClass: "role-creative",
     instagram: "mishtigupta_",
     email: "mishti.gupta@flame.edu.in"
@@ -148,10 +148,10 @@ export const CC_HEADS = [
     role: "Co-Head PR",
     tier: "cc",
     wing: "pr",
-    photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/ec-corporate.jpg",
     idBadge: "CO-HEAD PR",
     oneLiner: "Driving campus ambassador syndications, influencer tie-ups, and student PR networks across partner universities.",
-    wingLabel: "PR & Media",
+    wingLabel: "PR Team",
     roleClass: "role-creative",
     instagram: "yashasvinagarale_",
     email: "yashasvi.nagarale@flame.edu.in"
@@ -162,7 +162,7 @@ export const CC_HEADS = [
     role: "Head of Sports",
     tier: "cc",
     wing: "sports",
-    photo: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/oc/saanvi-agrawal.jpg",
     idBadge: "SPORTS",
     oneLiner: "Administering national tournament fixtures, rulebook compliance, certified referee panels, and podium tallies.",
     wingLabel: "Sports Operations",
@@ -172,31 +172,31 @@ export const CC_HEADS = [
   },
   {
     id: "HEAD-09",
-    name: "Anvi",
+    name: "Anvi Bhojnagarwala",
     role: "Co-Head Culturals",
     tier: "cc",
     wing: "cultural",
-    photo: "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/oc/anvi-bhojnagarwala.jpg",
     idBadge: "CO-HEAD CULTURALS",
-    oneLiner: "Curating Kalakaar Katta, headline musical acts, stage spectacles, and immersive amphitheater productions.",
-    wingLabel: "Cultural & Stage",
+    oneLiner: "Curating flagship cultural showcases, headline musical acts, stage spectacles, and amphitheater productions.",
+    wingLabel: "Culturals Team",
     roleClass: "role-cultural",
     instagram: "_.anviii._",
-    email: "anvi@flame.edu.in"
+    email: "anvi.bhojnagarwala@flame.edu.in"
   },
   {
     id: "HEAD-10",
-    name: "Dhritee",
+    name: "Dhritee Bhardwaj",
     role: "Co-Head Culturals",
     tier: "cc",
     wing: "cultural",
-    photo: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/oc/dhritee-bhardwaj.jpg",
     idBadge: "CO-HEAD CULTURALS",
-    oneLiner: "Directing battle of the bands, street dance battles, acoustic showcases, and high-energy festival stages.",
-    wingLabel: "Cultural & Stage",
+    oneLiner: "Directing dance showdowns, theatrical stages, music competitions, and high-energy cultural arenas.",
+    wingLabel: "Culturals Team",
     roleClass: "role-cultural",
     instagram: "dhritee_bee",
-    email: "dhritee@flame.edu.in"
+    email: "dhritee.bhardwaj@flame.edu.in"
   },
   {
     id: "HEAD-11",
@@ -204,10 +204,10 @@ export const CC_HEADS = [
     role: "Head of Management Events",
     tier: "cc",
     wing: "management",
-    photo: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-esports.jpg",
     idBadge: "MANAGEMENT EVENTS",
-    oneLiner: "Orchestrating Shark Arena B-Plan pitches, corporate crisis simulations, stock trading floors, and case studies.",
-    wingLabel: "Management Events",
+    oneLiner: "Orchestrating Case Conquest, Business Fiesta, MUN, Battle of Bids, and Article Writing competitions.",
+    wingLabel: "ME Events Team",
     roleClass: "role-tech",
     instagram: "ayush.mittalll",
     email: "ayush.mittal@flame.edu.in"
@@ -218,41 +218,41 @@ export const CC_HEADS = [
     role: "Head of Finance",
     tier: "cc",
     wing: "finance",
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/ec-finance.jpg",
     idBadge: "FINANCE",
     oneLiner: "Steward of budget modeling, cash disbursements, sponsor auditing, and treasury compliance.",
-    wingLabel: "Finance & Accounts",
+    wingLabel: "Finance Team",
     roleClass: "role-ec",
     instagram: "devam.gadia",
     email: "devam.gadia@flame.edu.in"
   },
   {
     id: "HEAD-13",
-    name: "Shashwat",
+    name: "Shashwat Tripathi",
     role: "Head of Sponsorship",
     tier: "cc",
     wing: "sponsorship",
-    photo: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-sponsorship.jpg",
     idBadge: "SPONSORSHIP",
     oneLiner: "Securing corporate brand deals, marquee title partnerships, on-court activations, and sponsor deliverables.",
-    wingLabel: "Sponsorship & Alliances",
+    wingLabel: "Sponsorship Team",
     roleClass: "role-pr",
     instagram: "shashwat_1702",
-    email: "shashwat@flame.edu.in"
+    email: "shashwat.tripathi@flame.edu.in"
   },
   {
     id: "HEAD-14",
-    name: "Janhavi",
+    name: "Janhavi Ajgaonkar",
     role: "Head of Registrations",
     tier: "cc",
     wing: "registrations",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-sports.jpg",
     idBadge: "REGISTRATIONS",
     oneLiner: "Supervising athlete sign-ups, team accreditation badges, slot allotment, and contingent check-ins.",
-    wingLabel: "Contingent Registrations",
+    wingLabel: "Registrations Team",
     roleClass: "role-sports",
     instagram: "janhavi.1010",
-    email: "janhavi@flame.edu.in"
+    email: "janhavi.ajgaonkar@flame.edu.in"
   },
   {
     id: "HEAD-15",
@@ -260,10 +260,10 @@ export const CC_HEADS = [
     role: "Head of Ceremonies",
     tier: "cc",
     wing: "ceremonies",
-    photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-ceremonies.jpg",
     idBadge: "CEREMONIES",
     oneLiner: "Choreographing the opening torchbearer parade, stadium medal podiums, and grand closing spectacles.",
-    wingLabel: "Ceremonies & Protocols",
+    wingLabel: "Ceremonies Team",
     roleClass: "role-cultural",
     instagram: "stuti_lakshman",
     email: "stuti.lakshman@flame.edu.in"
@@ -274,113 +274,231 @@ export const CC_HEADS = [
     role: "Head of IT",
     tier: "cc",
     wing: "it",
-    photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-tech.jpg",
     idBadge: "IT & DIGITAL",
     oneLiner: "Engineering web portals, live scoreboards, API scoring feeds, and digital infrastructure.",
-    wingLabel: "IT & Digital Grid",
+    wingLabel: "IT Team",
     roleClass: "role-tech",
     instagram: "nischaljogani",
     email: "nischal.jogani@flame.edu.in"
   },
   {
     id: "HEAD-17",
-    name: "Rajveer",
+    name: "Rajveer Pathak",
     role: "Head of Security",
     tier: "cc",
     wing: "security",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
+    photo: "/assets/heads/cc-security.jpg",
     idBadge: "SECURITY",
     oneLiner: "Managing stadium access checkpoints, paramedic emergency lanes, and festival safety protocols.",
-    wingLabel: "Security & Crowd Safety",
+    wingLabel: "Security Team",
     roleClass: "role-ops",
     instagram: "hennessy_rajveer5",
-    email: "rajveer@flame.edu.in"
+    email: "rajveer.pathak@flame.edu.in"
   }
 ];
 
 export const COMMITTEE_HEADS = [...EC_MEMBERS, ...CC_HEADS];
 
 // =========================================================================
-// 2. OFFICIAL EVENTS DATABASE (Categorized: sports, cultural, management)
-//    - Esports removed per Page 5
-//    - Dates updated to 22nd–26th January 2027 per Page 4
-//    - Includes explicit timings & venues for horizontal Schedule Page (Page 6)
-//      and Events Page (Page 3 / events1.png & events2.png)
+// 2. OFFICIAL EVENTS DATABASE
+//    Synced directly from `Final Events List` (events.xlsx) & Drive `website photos`
+//    - Sports Events (Cricket, Basketball 5x5 & 3x3, Tennis, Volleyball, Badminton,
+//      Table Tennis, Swimming, FLAME Hill Run 5K, Football, Street Football, Futsal,
+//      Frisbee Mix, Chess, Sprints & Relays, Snooker, Zumba, Yoga, Squash, Handball,
+//      Kickboxing, Pickleball, Padel, and Inferno [renamed from Hyrox])
+//    - Cultural Events (Dance Group Western & Indian, Dance Solo Western & Indian,
+//      Music Group, Music Solo, Theatre Group & Solo, Filmmaking, Photography, Art, Poetry)
+//    - Management Events (Case Conquest, Business Fiesta, MUN, Battle of Bids, Article Writing)
 // =========================================================================
 export const SCHEDULE_EVENTS = [
-  // --- CULTURAL EVENTS ---
+  // ================= CULTURAL EVENTS =================
   {
-    id: "band-battle",
-    name: "Battle of the Bands (DECIBEL)",
+    id: "dance-group-western",
+    name: "Dance Group (Western)",
+    category: "cultural",
+    categoryLabel: "CULTURAL EVENTS",
+    days: [3],
+    datesText: "January 24, 2027",
+    timing: "05:30 PM – 08:30 PM",
+    venue: "Main Campus Amphitheater",
+    format: "Western Group Choreography (Max Team Size: 18)",
+    desc: "Unleash rhythm, coordination, and high-voltage energy with your crew in the flagship Western Group Dance showdown.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/dance-western.jpg"
+  },
+  {
+    id: "dance-group-indian",
+    name: "Dance Group (Indian)",
+    category: "cultural",
+    categoryLabel: "CULTURAL EVENTS",
+    days: [2],
+    datesText: "January 23, 2027",
+    timing: "04:30 PM – 07:30 PM",
+    venue: "Main Campus Amphitheater",
+    format: "Classical & Folk Group Showcase (Max Team Size: 18)",
+    desc: "Celebrate heritage, grace, and classical/folk ensemble choreography on the grand FLAME amphitheater stage.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/dance-indian.jpg"
+  },
+  {
+    id: "dance-solo",
+    name: "Dance Solo (Western & Indian)",
+    category: "cultural",
+    categoryLabel: "CULTURAL EVENTS",
+    days: [1, 2],
+    datesText: "January 22 – 23, 2027",
+    timing: "02:00 PM – 05:00 PM",
+    venue: "Auditorium & Central Plaza Stage",
+    format: "Solo Performance — Western & Indian Categories (Team Size: 1)",
+    desc: "Command the spotlight in solo classical, contemporary, hip-hop, or freestyle dance categories.",
+    prize: "Solo Laurels + Cash Prize",
+    image: "/assets/events/dance-solo.jpg"
+  },
+  {
+    id: "music-group",
+    name: "Music Group",
     category: "cultural",
     categoryLabel: "CULTURAL EVENTS",
     days: [2],
     datesText: "January 23, 2027",
     timing: "06:00 PM – 09:30 PM",
     venue: "Main Campus Amphitheater",
-    format: "Live Band Performance (20-Min Slot)",
-    desc: "The ultimate collegiate rock, indie, and fusion showdown under a concert-grade PA system with live spectators.",
-    prize: "₹1,50,000 + Trophy",
-    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80"
+    format: "Band & Ensemble Performance (Max Team Size: 8)",
+    desc: "The ultimate collegiate band, fusion, and ensemble music showdown under concert-grade lighting and sound.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/music-group.jpg"
   },
   {
-    id: "street-dance",
-    name: "Step-off (Western Group Dance)",
+    id: "music-solo",
+    name: "Music Solo",
     category: "cultural",
     categoryLabel: "CULTURAL EVENTS",
-    days: [3],
-    datesText: "January 24, 2027",
-    timing: "05:30 PM – 08:30 PM",
-    venue: "Central Plaza Stage",
-    format: "Crew Routine & Group Choreography",
-    desc: "Unleash rhythm, coordination, and creativity with your crew! Step-off brings fierce hip-hop and urban dance battles.",
-    prize: "₹1,35,000 + Trophy",
-    image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "kalakaar-katta",
-    name: "Kalakaar Katta Unplugged",
-    category: "cultural",
-    categoryLabel: "CULTURAL EVENTS",
-    days: [1, 2],
-    datesText: "January 22 – 23, 2027",
-    timing: "04:00 PM – 07:00 PM",
+    days: [1],
+    datesText: "January 22, 2027",
+    timing: "03:30 PM – 06:30 PM",
     venue: "Katta Circle Courtyard",
-    format: "Acoustic Sets, Spoken Word & Slams",
-    desc: "Intimate evening open mics, soulful indie acoustic jams, and expressive spoken-word poetry under the courtyard lights.",
-    prize: "₹1,20,000 + Featured Spot",
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80"
+    format: "Solo Vocal & Instrumental Showcase (Team Size: 1)",
+    desc: "Soulful solo vocals and instrumental performances in an intimate acoustic courtyard setting.",
+    prize: "Solo Laurels + Cash Prize",
+    image: "/assets/events/music-solo.jpg"
   },
   {
-    id: "fashion-show",
-    name: "Fashion Promenade: Phoenix Walk",
+    id: "theatre-group",
+    name: "Theatre Group",
     category: "cultural",
     categoryLabel: "CULTURAL EVENTS",
     days: [4],
     datesText: "January 25, 2027",
-    timing: "07:00 PM – 10:00 PM",
-    venue: "Main Amphitheater Runway",
-    format: "Thematic Ramp Walk & Presentation",
-    desc: "Avant-garde and couture fashion interpretations designed and modeled by top collegiate fashion contingents.",
-    prize: "₹1,40,000 + Best Model Honors",
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80"
+    timing: "03:00 PM – 06:30 PM",
+    venue: "Auditorium Hall 1 & Plaza",
+    format: "Stage Play & Nukkad Natak (Max Team Size: 10)",
+    desc: "Powerful ensemble dramatics, theatrical storytelling, and street play productions judged by theatre stalwarts.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/theater-group.jpg"
   },
   {
-    id: "standup",
-    name: "Stand-Up & Stage Dramatics",
+    id: "theatre-solo",
+    name: "Theatre Solo",
     category: "cultural",
     categoryLabel: "CULTURAL EVENTS",
-    days: [1, 5],
-    datesText: "January 22 & 26, 2027",
-    timing: "03:00 PM – 06:00 PM",
-    venue: "Auditorium Hall 1",
-    format: "Solo Set & Theatrical Showcase",
-    desc: "Sharp observational wit, theatrical street plays, and stage monologues judged by headline performing artists.",
-    prize: "₹1,15,000 + Festival Opener Spot",
-    image: "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?auto=format&fit=crop&w=900&q=80"
+    days: [1],
+    datesText: "January 22, 2027",
+    timing: "02:00 PM – 04:30 PM",
+    venue: "Black Box / Auditorium",
+    format: "Mono-Acting & Dramatic Monologue (Team Size: 1)",
+    desc: "Captivate the jury with solo character portrayals, dramatic monologues, and expressive stagecraft.",
+    prize: "Solo Laurels + Cash Prize",
+    image: "/assets/events/theater.jpg"
+  },
+  {
+    id: "creative-arts-online",
+    name: "Filmmaking, Photography, Art & Poetry",
+    category: "cultural",
+    categoryLabel: "CULTURAL EVENTS",
+    days: [1, 2, 3, 4],
+    datesText: "January 22 – 25, 2027",
+    timing: "10:00 AM – 05:00 PM",
+    venue: "Campus Gallery & Online Submissions",
+    format: "Filmmaking, Photography (Online), Art (Online) & Poetry (Online) (Team Size: 1)",
+    desc: "Visual storytelling, short filmmaking, fine art, photography, and spoken/written poetry competitions.",
+    prize: "Featured Exhibition + Cash Prize",
+    image: "/assets/collage/collage-2.jpg"
   },
 
-  // --- SPORTS EVENTS ---
+  // ================= MANAGEMENT EVENTS =================
+  {
+    id: "case-conquest",
+    name: "Case Conquest",
+    category: "management",
+    categoryLabel: "MANAGEMENT EVENTS",
+    days: [1, 2],
+    datesText: "January 22 – 23, 2027",
+    timing: "10:00 AM – 04:00 PM",
+    venue: "Executive Council Chambers",
+    format: "Strategic Business Case Competition (Team Size: 2)",
+    desc: "Analyze real-world corporate challenges, build actionable strategy decks, and defend your recommendations before industry leaders.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/case-conquest.jpg"
+  },
+  {
+    id: "business-fiesta",
+    name: "Business Fiesta",
+    category: "management",
+    categoryLabel: "MANAGEMENT EVENTS",
+    days: [2, 3],
+    datesText: "January 23 – 24, 2027",
+    timing: "11:00 AM – 04:30 PM",
+    venue: "Venture War Room (Auditorium)",
+    format: "Entrepreneurship & Business Strategy Showdown (Team Size: 1)",
+    desc: "Test your商业 acumen, crisis decision-making, and entrepreneurial pitch skills in FLAME Kurukshetra's flagship Business Fiesta.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/management.jpg"
+  },
+  {
+    id: "battle-of-bids",
+    name: "Battle of Bids",
+    category: "management",
+    categoryLabel: "MANAGEMENT EVENTS",
+    days: [3, 4],
+    datesText: "January 24 – 25, 2027",
+    timing: "10:30 AM – 04:00 PM",
+    venue: "Finance Lab & Auction Arena",
+    format: "Strategic Auction & Resource Bidding (Team Size: 2)",
+    desc: "High-stakes live bidding war where valuation instincts, budget management, and game theory determine the winning franchise.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/case-conquest.jpg"
+  },
+  {
+    id: "mun",
+    name: "MUN (Model United Nations)",
+    category: "management",
+    categoryLabel: "MANAGEMENT EVENTS",
+    days: [1, 2],
+    datesText: "January 22 – 23, 2027",
+    timing: "09:30 AM – 05:00 PM",
+    venue: "Senate Conference Hall",
+    format: "Parliamentary Diplomacy & Policy Debate (Team Size: 1)",
+    desc: "Debate global geopolitical crises, draft resolutions, and forge diplomatic coalitions in the Kurukshetra MUN.",
+    prize: "Best Delegate Gavel + Cash Prize",
+    image: "/assets/events/management.jpg"
+  },
+  {
+    id: "article-writing",
+    name: "Article Writing",
+    category: "management",
+    categoryLabel: "MANAGEMENT EVENTS",
+    days: [2],
+    datesText: "January 23, 2027",
+    timing: "11:00 AM – 02:00 PM",
+    venue: "Academic Block / Online Submission",
+    format: "Business & Economic Editorial Writing (Team Size: 1)",
+    desc: "Craft incisive analytical articles on contemporary financial, economic, and management paradigms.",
+    prize: "Publication + Cash Prize",
+    image: "/assets/events/case-conquest.jpg"
+  },
+
+  // ================= SPORTS EVENTS =================
   {
     id: "inferno",
     name: "Inferno",
@@ -390,194 +508,304 @@ export const SCHEDULE_EVENTS = [
     datesText: "January 23 – 24, 2027",
     timing: "07:00 AM – 12:00 PM",
     venue: "FLAME Athletic Track & Endurance Arena",
-    format: "Functional Fitness & Endurance Race",
-    desc: "Push your physical limits in Inferno—FLAME Kurukshetra's flagship high-intensity functional fitness and endurance race combining running and workout stations.",
-    prize: "₹1,30,000 + Inferno Trophy",
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "yoga",
-    name: "Yoga",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [4],
-    datesText: "January 25, 2027",
-    timing: "07:30 AM – 11:00 AM",
-    venue: "Indoor Sports Complex (Studio Hall)",
-    format: "Traditional & Rhythmic Asana Championship",
-    desc: "Showcase strength, flexibility, and focus in FLAME Kurukshetra's traditional Yoga championship.",
-    prize: "₹85,000 + Championship Medals",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "volleyball",
-    name: "Volleyball",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [2, 3, 4],
-    datesText: "January 24, 2027",
-    timing: "09:00 AM – 04:30 PM",
-    venue: "Outdoor Floodlit Volleyball Arena",
-    format: "6v6 Best of 5 Sets (25 Points)",
-    desc: "Battle it out at the FLAME Kurukshetra 2027 Volleyball Championship on regulation floodlit courts.",
-    prize: "₹1,28,000 + Medals",
-    image: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "tennis",
-    name: "Tennis",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [1, 2, 3],
-    datesText: "January 24, 2027",
-    timing: "08:30 AM – 03:30 PM",
-    venue: "Center Court & Synthetic Tennis Arena",
-    format: "Singles & Doubles Best of 3 Sets",
-    desc: "Ace your game at the FLAME Kurukshetra 2027 Tennis Championship across synthetic hardcourts.",
-    prize: "₹1,30,000 + Championship Medals",
-    image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "table-tennis",
-    name: "Table Tennis",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [1, 2],
-    datesText: "January 23, 2027",
-    timing: "10:00 AM – 05:00 PM",
-    venue: "Indoor Sports Complex (Hall B)",
-    format: "Singles & Mixed Team Knockout",
-    desc: "Smash your limits at the FLAME Kurukshetra 2027 Table Tennis Championship on Stag tournament tables.",
-    prize: "₹1,20,000 + Medals",
-    image: "https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "swimming",
-    name: "Swimming",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [4, 5],
-    datesText: "January 26, 2027",
-    timing: "08:00 AM – 01:30 PM",
-    venue: "Olympic-Length 50m Aquatic Center",
-    format: "Freestyle, Butterfly, Breaststroke & Relays",
-    desc: "Dive into excellence at the FLAME Kurukshetra 2027 Swimming Championship in our 50m Olympic pool.",
-    prize: "₹1,25,000 + Medals",
-    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80"
+    format: "Men Open, Men Doubles, Women Doubles & Mixed Doubles (Open)",
+    desc: "Push your physical limits in Inferno—FLAME Kurukshetra's flagship high-intensity functional fitness and endurance race.",
+    prize: "Inferno Championship Trophy + Medals",
+    image: "/assets/events/kickboxing.jpg"
   },
   {
     id: "football",
-    name: "Football Championship",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [1, 2, 3, 5],
-    datesText: "January 22 – 26, 2027",
-    timing: "09:00 AM – 06:00 PM",
-    venue: "FLAME Main Turf Arena",
-    format: "11v11 Knockout (90 Mins + Extra Time)",
-    desc: "Western India's premier collegiate football tournament with certified national referees and floodlit championship turf.",
-    prize: "₹1,45,000 + Phoenix Cup",
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "basketball",
-    name: "Basketball Slam 5v5",
-    category: "sports",
-    categoryLabel: "SPORTS EVENTS",
-    days: [2, 3, 4, 5],
-    datesText: "January 23 – 26, 2027",
-    timing: "10:00 AM – 07:00 PM",
-    venue: "Indoor Wooden Championship Court",
-    format: "FIBA 5v5 Full-Court (4 Quarters)",
-    desc: "Fierce indoor hardwood action featuring FIBA official scoreboards, 24-second shot clocks, and electric court-side crowds.",
-    prize: "₹1,35,000 + MVP Honors",
-    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "cricket",
-    name: "Kurukshetra T20 Trophy",
+    name: "Football (Men & Women)",
     category: "sports",
     categoryLabel: "SPORTS EVENTS",
     days: [1, 2, 3, 4, 5],
     datesText: "January 22 – 26, 2027",
-    timing: "08:30 AM – 04:30 PM",
+    timing: "08:30 AM – 06:30 PM",
+    venue: "FLAME Main Turf Arena",
+    format: "Inter-University 11v11 (Squad Size: 18 — 11+7)",
+    desc: "Western India's premier inter-university 11v11 football tournament on floodlit championship turf for Men and Women.",
+    prize: "Phoenix Cup + Cash Prize",
+    image: "/assets/events/football.jpg"
+  },
+  {
+    id: "street-football",
+    name: "Street Football (Men & Women)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [2, 3],
+    datesText: "January 23 – 24, 2027",
+    timing: "10:00 AM – 05:00 PM",
+    venue: "Street Cage Arena",
+    format: "Open (17–30) 3v3 Cage Knockout (Squad Size: 4 — 3+1)",
+    desc: "Fast-paced, high-skill 3v3 Street Football battles for Men and Women in a tight cage format.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/street-football.jpg"
+  },
+  {
+    id: "futsal",
+    name: "Futsal (5v5 Men & Women)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3],
+    datesText: "January 22 – 24, 2027",
+    timing: "09:00 AM – 05:30 PM",
+    venue: "Futsal Turf Court",
+    format: "Inter-University 5v5 (Squad Size: 12 — 5+7)",
+    desc: "High-tempo 5v5 Futsal championship featuring rapid transitions and close-control technical play.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/futsal.jpg"
+  },
+  {
+    id: "cricket",
+    name: "Cricket (Men)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3, 4, 5],
+    datesText: "January 22 – 26, 2027",
+    timing: "08:00 AM – 04:30 PM",
     venue: "FLAME Cricket Oval",
-    format: "T20 White-Ball Knockouts",
-    desc: "Inter-collegiate 20-over battle on turf pitches featuring digital scoring, white leather balls, and pavilion floodlights.",
-    prize: "₹1,50,000 + Phoenix Trophy",
-    image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=900&q=80"
+    format: "Inter-University (17–24) Leather Ball (Squad Size: 16 — 11+5)",
+    desc: "Inter-university 20-over battle on turf pitches featuring certified umpires, digital scoring, and pavilion floodlights.",
+    prize: "Phoenix Trophy + Cash Prize",
+    image: "/assets/events/cricket.jpg"
+  },
+  {
+    id: "basketball-5x5",
+    name: "Basketball 5x5 (Men & Women)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3, 4, 5],
+    datesText: "January 22 – 26, 2027",
+    timing: "09:00 AM – 07:00 PM",
+    venue: "Indoor Wooden & Floodlit Courts",
+    format: "Inter-University (17–25) 5v5 (Squad Size: 12 — 5+7)",
+    desc: "Fierce 5v5 full-court basketball action for Men and Women with official FIBA shot clocks and electric crowds.",
+    prize: "Championship Trophy + MVP Honors",
+    image: "/assets/events/basketball.jpg"
+  },
+  {
+    id: "basketball-3x3",
+    name: "Basketball 3x3 (Men & Women)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [3, 4],
+    datesText: "January 24 – 25, 2027",
+    timing: "10:00 AM – 05:00 PM",
+    venue: "Outdoor Half-Court Arena",
+    format: "Open 3x3 Half-Court (Squad Size: 4 — 3+1)",
+    desc: "Explosive half-court 3x3 basketball showdowns with rapid 12-second shot clocks.",
+    prize: "Championship Medals + Cash Prize",
+    image: "/assets/events/basketball-3x3.jpg"
+  },
+  {
+    id: "volleyball",
+    name: "Volleyball (Men & Women)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [2, 3, 4],
+    datesText: "January 23 – 25, 2027",
+    timing: "09:00 AM – 05:00 PM",
+    venue: "Outdoor Floodlit Volleyball Arena",
+    format: "Inter-University (17–25) 6v6 (Squad Size: 12 — 6+6)",
+    desc: "Battle it out at the FLAME Kurukshetra 2027 Volleyball Championship across Men's and Women's brackets.",
+    prize: "Championship Trophy + Medals",
+    image: "/assets/events/volleyball.jpg"
+  },
+  {
+    id: "tennis",
+    name: "Tennis (Singles, Doubles & Mixed)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3, 4],
+    datesText: "January 22 – 25, 2027",
+    timing: "08:00 AM – 04:00 PM",
+    venue: "Center Court Synthetic Tennis Arena",
+    format: "Open (17–28) — Men's/Women's Singles, Men's Doubles & Mixed Doubles",
+    desc: "Ace your game at the FLAME Kurukshetra 2027 Tennis Championship across synthetic hardcourts.",
+    prize: "Championship Trophy + Medals",
+    image: "/assets/events/tennis.jpg"
   },
   {
     id: "badminton",
-    name: "Badminton Masters",
+    name: "Badminton (Singles, Doubles & Mixed)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3, 4],
+    datesText: "January 22 – 25, 2027",
+    timing: "09:00 AM – 06:00 PM",
+    venue: "Indoor Badminton Arena (Synthetic Courts)",
+    format: "Open (17–28) — MS, WS, MD, WD & XD",
+    desc: "High-flying smashes and precision drop shots across Men's, Women's, and Mixed Doubles brackets.",
+    prize: "Phoenix Trophies + Cash Prize",
+    image: "/assets/events/badminton.jpg"
+  },
+  {
+    id: "table-tennis",
+    name: "Table Tennis (Team, Singles & Doubles)",
     category: "sports",
     categoryLabel: "SPORTS EVENTS",
     days: [1, 2, 3],
     datesText: "January 22 – 24, 2027",
     timing: "09:30 AM – 05:30 PM",
-    venue: "Indoor Badminton Arena (4 Synthetic Courts)",
-    format: "BWF Best of 3 Sets (21 Points)",
-    desc: "High-flying smashes and precision drop shots on cushioned synthetic courts under glare-free stadium lighting.",
-    prize: "₹1,25,000 + Phoenix Trophies",
-    image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=900&q=80"
+    venue: "Indoor Sports Complex (Hall B)",
+    format: "Open (16–30) — Men/Women Team (5), MS, WS, MD, WD & XD",
+    desc: "Smash your limits at the FLAME Kurukshetra 2027 Table Tennis Championship on Stag tournament tables.",
+    prize: "Championship Trophies + Medals",
+    image: "/assets/events/table-tennis.jpg"
+  },
+  {
+    id: "swimming",
+    name: "Swimming (Individual & 4x50m Relays)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [4, 5],
+    datesText: "January 25 – 26, 2027",
+    timing: "08:00 AM – 02:00 PM",
+    venue: "Olympic-Length 50m Aquatic Center",
+    format: "Open (16–30) — 50m Free, Back, Breast, Fly & 4x50m Free/Medley Relays",
+    desc: "Dive into excellence at the FLAME Kurukshetra 2027 Swimming Championship across individual sprints and team relays.",
+    prize: "Championship Medals + Cash Prize",
+    image: "/assets/events/swimming.jpg"
+  },
+  {
+    id: "flame-hill-run-5k",
+    name: "FLAME Hill Run 5K",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [4],
+    datesText: "January 25, 2027",
+    timing: "06:30 AM – 09:30 AM",
+    venue: "FLAME Valley Hill Trail & Track",
+    format: "Open (16+) Men, Women & FLAME Student Categories",
+    desc: "Conquer the scenic yet demanding 5K hill trail across the lush FLAME University valley.",
+    prize: "Finisher Laurels + Cash Prize",
+    image: "/assets/events/5k-run.jpg"
+  },
+  {
+    id: "frisbee",
+    name: "Frisbee Mix (Open)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3],
+    datesText: "January 22 – 24, 2027",
+    timing: "08:30 AM – 05:00 PM",
+    venue: "Arjuna Main Turf",
+    format: "Open (16–30) Mixed Gender Ultimate (Squad Size: 20)",
+    desc: "Fast-paced disc handling, end-zone layout catches, and WFDF spirit-of-the-game championship play.",
+    prize: "Gold Medals + Cash Prize",
+    image: "/assets/events/frisbee.jpg"
+  },
+  {
+    id: "athletics",
+    name: "Athletics (Sprints & 4x100m Relays)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 5],
+    datesText: "January 22 & 26, 2027",
+    timing: "08:00 AM – 01:00 PM",
+    venue: "400m Synthetic Athletic Track",
+    format: "Inter-University (17–24) — 100m, 200m, 400m & 4x100m Relays (M/W/Mixed)",
+    desc: "Explosive track sprints and baton relays across 100m, 200m, 400m, and 4x100m Men, Women, and Mixed categories.",
+    prize: "Track Laurels + Medals",
+    image: "/assets/events/athletics.jpg"
+  },
+  {
+    id: "handball",
+    name: "Handball (Men & Women Open)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [2, 3],
+    datesText: "January 23 – 24, 2027",
+    timing: "09:00 AM – 04:30 PM",
+    venue: "Outdoor Handball Arena",
+    format: "Open (16–27) 7v7 (Squad Size: 14 — 7+7)",
+    desc: "High-scoring team handball clashes featuring jump-shot goals and fast-break counterattacks.",
+    prize: "Championship Trophy + Medals",
+    image: "/assets/events/handball.jpg"
+  },
+  {
+    id: "squash",
+    name: "Squash (Men's, Women's & Mixed Doubles)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3],
+    datesText: "January 22 – 24, 2027",
+    timing: "09:30 AM – 05:00 PM",
+    venue: "Indoor Glass-Back Squash Courts",
+    format: "Open — Men's Singles, Women's Singles & Mixed Doubles (2)",
+    desc: "High-velocity glass-court squash duels testing agility, wall precision, and endurance.",
+    prize: "Championship Trophy + Medals",
+    image: "/assets/events/squash.jpg"
+  },
+  {
+    id: "padel-pickleball",
+    name: "Padel & Pickleball Open",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [2, 3, 4],
+    datesText: "January 23 – 25, 2027",
+    timing: "09:00 AM – 06:00 PM",
+    venue: "Padel Glass Arena & Pickleball Courts",
+    format: "Open — Padel (MD, WD, XD) & Pickleball (MS, WS, MD, WD, XD)",
+    desc: "Compete in India's fastest-growing racket sports across dedicated Padel and Pickleball brackets.",
+    prize: "Championship Trophies + Medals",
+    image: "/assets/events/tennis.jpg"
+  },
+  {
+    id: "snooker",
+    name: "Snooker (Open)",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [1, 2, 3],
+    datesText: "January 22 – 24, 2027",
+    timing: "10:00 AM – 06:00 PM",
+    venue: "Indoor Cue Sports Lounge",
+    format: "Open Knockout Frames",
+    desc: "Precision cue control, break-building, and tactical safety play on tournament-grade snooker tables.",
+    prize: "Championship Trophy + Cash Prize",
+    image: "/assets/events/snooker.jpg"
   },
   {
     id: "chess",
-    name: "Chess Grand Prix",
+    name: "Chess Non-Rated Mix",
     category: "sports",
     categoryLabel: "SPORTS EVENTS",
     days: [1, 2],
-    datesText: "January 22, 2027",
-    timing: "10:00 AM – 04:00 PM",
-    venue: "Mind Hall (Indoor Sports Complex)",
-    format: "FIDE Swiss League (Rapid & Blitz)",
-    desc: "FIDE-rated arbiters, digital DGT boards, and timed blitz tiebreaks to crown the collegiate Grandmaster.",
-    prize: "₹1,20,000 + Grand Trophy",
-    image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=900&q=80"
-  },
-
-  // --- MANAGEMENT EVENTS ---
-  {
-    id: "shark-arena",
-    name: "Shark Arena: B-Plan Pitch",
-    category: "management",
-    categoryLabel: "MANAGEMENT EVENTS",
-    days: [2, 3],
-    datesText: "January 23 – 24, 2027",
-    timing: "11:00 AM – 04:00 PM",
-    venue: "Venture War Room (Auditorium)",
-    format: "10-Min Pitch + 5-Min Shark Q&A",
-    desc: "Collegiate startup and venture pitch competition judged by Angel Investors, VC partners, and startup founders.",
-    prize: "₹1,60,000 Seed Grant",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: "crisis-sim",
-    name: "Corporate Crisis Simulation",
-    category: "management",
-    categoryLabel: "MANAGEMENT EVENTS",
-    days: [1, 2],
     datesText: "January 22 – 23, 2027",
-    timing: "10:00 AM – 03:30 PM",
-    venue: "Executive Council Chambers",
-    format: "Escalating Boardroom War Room",
-    desc: "Teams navigate market shocks, hostile takeovers, and live press conferences under intense real-time pressure.",
-    prize: "₹1,25,000 + Mentorship",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
+    timing: "10:00 AM – 04:30 PM",
+    venue: "Mind Hall (Indoor Sports Complex)",
+    format: "Open Non-Rated Swiss League",
+    desc: "Timed rapid and blitz chess battles under tournament clocks to crown the Kurukshetra Chess Champion.",
+    prize: "Grand Trophy + Cash Prize",
+    image: "/assets/events/case-conquest.jpg"
   },
   {
-    id: "dalal-street",
-    name: "Wolf of Dalal Street",
-    category: "management",
-    categoryLabel: "MANAGEMENT EVENTS",
+    id: "kickboxing",
+    name: "Kickboxing",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
     days: [3, 4],
     datesText: "January 24 – 25, 2027",
-    timing: "09:30 AM – 03:30 PM",
-    venue: "Finance Lab Simulation Terminals",
-    format: "Live Market & Portfolio Simulation",
-    desc: "High-frequency stock market simulation trading equities, commodities, and derivatives amidst breaking mock news.",
-    prize: "₹1,30,000 Cash Prize",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+    timing: "11:00 AM – 05:00 PM",
+    venue: "Combat Sports Ring (Indoor Complex)",
+    format: "Weight-Category Point & Ring Bouts",
+    desc: "Controlled striking, footwork, and ring generalship officiated by certified combat sports referees.",
+    prize: "Championship Medals + Trophy",
+    image: "/assets/events/kickboxing.jpg"
+  },
+  {
+    id: "yoga-zumba",
+    name: "Yoga & Zumba Masterclass",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [4],
+    datesText: "January 25, 2027",
+    timing: "07:30 AM – 11:30 AM",
+    venue: "Indoor Studio & Amphitheater Lawn",
+    format: "Yoga Open (17–35) & FLAME Masterclasses",
+    desc: "Showcase strength, flexibility, and mindfulness in the Yoga championship alongside high-energy Zumba sessions.",
+    prize: "Championship Medals + Laurels",
+    image: "/assets/events/zumba.jpg"
   }
 ];
 
@@ -594,8 +822,8 @@ export const BLOG_POSTS = [
     readTime: '5 min read',
     author: 'Nischal Jogani',
     role: 'Head of IT & Digital Grid',
-    avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80',
-    image: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1000&q=80',
+    avatar: '/assets/heads/cc-tech.jpg',
+    image: '/assets/events/football.jpg',
     excerpt: 'Discover the cutting-edge AI suites streamlining sports analytics, match officiating, automated video highlight clipping, and tournament scheduling at Kurukshetra.',
     content: `## The Modern Intelligence Revolution in Collegiate Athletics
 
@@ -612,7 +840,7 @@ From high-precision ball tracking systems on the synthetic tennis courts to dyna
 - **Smart Rulebook Interpretation:** Instant conversational retrieval for intricate rule queries across 20+ distinct disciplines.
 - **Decentralized Fixture Integrity:** Algorithms simulate knockout seedings to prevent unfair match scheduling bottlenecks.
 
-Whether you are competing in the cricket knockout or spectating at Kalakaar Katta, technology ensures every moment operates like a finely tuned engine.`
+Whether you are competing in the cricket knockout or spectating at the Amphitheater, technology ensures every moment operates like a finely tuned engine.`
   },
   {
     id: 'story-2',
@@ -623,8 +851,8 @@ Whether you are competing in the cricket knockout or spectating at Kalakaar Katt
     readTime: '7 min read',
     author: 'Saanvi Agrawal',
     role: 'Head of Sports Operations',
-    avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1000&q=80',
+    avatar: '/assets/oc/saanvi-agrawal.jpg',
+    image: '/assets/events/street-football.jpg',
     excerpt: 'A deep-dive tactical analysis into collegiate turf football dynamics, transition speed, high pressing traps, and how university teams prepare for 90-minute knockout battles.',
     content: `## Dissecting the High-Press Blueprint on Turf
 
@@ -652,10 +880,10 @@ At Kurukshetra, matches that go into extra time demand peak aerobic fitness. Tea
     tagColor: '#FE5A00',
     date: 'Jan 02, 2027',
     readTime: '6 min read',
-    author: 'Parth',
+    author: 'Ayush Kumar',
     role: 'Chairperson, Executive Council',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80',
+    avatar: '/assets/oc/ayush-kumar.jpg',
+    image: '/assets/collage/collage-1.jpg',
     excerpt: 'An inspiring reflection on what makes FLAME Kurukshetra the gold standard of collegiate festivals in India: unmatched sportsmanship, cultural passion, and lifelong memories.',
     content: `## A Crucible of Passion and Sportsmanship
 
@@ -684,28 +912,28 @@ export const FAQ_DATA = [
     category: "general",
     categoryLabel: "General & Overview",
     question: "Who is eligible to participate in Kurukshetra competitions?",
-    answer: "Enrolled undergraduate and postgraduate students from recognized universities, colleges, and institutes across India are eligible. All participants must present a valid Government Photo ID (Aadhar/Passport) and their official College Identity Card at check-in."
+    answer: "Enrolled undergraduate and postgraduate students from recognized universities, colleges, and institutes across India are eligible. Open category events also welcome eligible participants within the specified age brackets. All participants must present a valid Government Photo ID and College ID at check-in."
   },
   {
     id: "faq-3",
     category: "registrations",
     categoryLabel: "Registrations & Teams",
-    question: "How does Contingent Registration work, and can colleges enter multiple teams?",
-    answer: "Colleges can register an entire institutional contingent or enter standalone teams for specific sports, cultural, and management events via our online portal. Each contingent is assigned a dedicated Kurukshetra POC to facilitate seamless slotting, accreditation, and schedule alignment."
+    question: "Do we need to enter phone numbers and emails for all players in team sports?",
+    answer: "No! Only the Team Captain / Team POC's phone number and email ID are required when registering for team events. Simply toggle the Captain / POC slider ON for your designated captain."
   },
   {
     id: "faq-4",
     category: "registrations",
     categoryLabel: "Registrations & Teams",
     question: "What is the registration fee, and what does it include?",
-    answer: "Registration fees vary depending on the event discipline (team sports, individual racket sports, cultural flagships, and management events). The fee covers official event participation, referee adjudication, official accreditation badges, hydration stations, paramedic support, and access to all festival pro-nights and concerts."
+    answer: "Registration fees vary depending on the event discipline (team sports, individual racket sports, cultural flagships, and management events). The fee covers official event participation, referee adjudication, official accreditation badges, hydration stations, paramedic support, and access to festival pro-nights."
   },
   {
     id: "faq-5",
     category: "hospitality",
     categoryLabel: "Stay & Hospitality",
     question: "Is accommodation provided for outstation teams on or near campus?",
-    answer: "Yes! The Kurukshetra Hospitality Wing arranges secure, comfortable lodging for outstation contingents at vetted partner hotels with dedicated shuttle transport to and from the FLAME campus throughout match days. Food passes and nutrition dining can also be bundled."
+    answer: "Yes! The Kurukshetra Hospitality Wing arranges secure, comfortable lodging for outstation contingents with dedicated shuttle transport throughout match days. Food passes and athlete dining can also be bundled."
   },
   {
     id: "faq-6",
@@ -719,7 +947,7 @@ export const FAQ_DATA = [
     category: "rulebooks",
     categoryLabel: "Rules & Officiating",
     question: "Who adjudicates the sporting matches, and how are disputes resolved?",
-    answer: "All matches are refereed by certified officials from respective state and national sports federations (AIFF, BFI, FIBA, ITTF). Any technical disputes are escalated directly to the Kurukshetra Judicial Committee comprising the Sports Head, Chief Referee, and University Observer."
+    answer: "All matches are refereed by certified officials from respective state and national sports federations. Any technical disputes are escalated directly to the Kurukshetra Judicial Committee comprising the Sports Head, Chief Referee, and Faculty Advisor."
   },
   {
     id: "faq-8",
@@ -733,7 +961,7 @@ export const FAQ_DATA = [
     category: "security",
     categoryLabel: "Security & Guidelines",
     question: "What safety, medical, and emergency facilities are present on-site?",
-    answer: "The campus maintains 24/7 emergency medical clinics, on-standby ambulances, certified physiotherapists, and paramedic tents positioned at every major court and turf. Rapid emergency transit routes are maintained at all times."
+    answer: "The campus maintains 24/7 emergency medical clinics, on-standby ambulances, certified physiotherapists, and paramedic tents positioned at every major court and turf."
   },
   {
     id: "faq-10",
@@ -745,118 +973,173 @@ export const FAQ_DATA = [
 ];
 
 // =========================================================================
-// 5. ALBUM ARCHIVE MEDIA GALLERY
+// 5. ALBUM ARCHIVE MEDIA GALLERY (Real Downloaded Kurukshetra Photos from Drive)
 // =========================================================================
 export const ALBUM_MEDIA = [
   {
     id: "photo-01",
-    title: "Football Championship — Floodlit Turf Finale",
+    title: "Floodlit Turf Football — Championship Action",
     category: "Football",
     day: 1,
     date: "Jan 22, 2027",
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/events/football.jpg",
     aspect: "landscape",
     size: "2.4 MB",
     photographer: "Kuru Media Wing"
   },
   {
     id: "photo-02",
-    title: "Hardwood Basketball — Championship Tip-Off",
-    category: "Basketball",
+    title: "Amphitheater Cultural Showcase — Mainstage Lights",
+    category: "Culturals",
     day: 2,
     date: "Jan 23, 2027",
-    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1000&q=80",
-    aspect: "portrait",
-    size: "3.1 MB",
-    photographer: "Athlete Capture Crew"
+    image: "/assets/collage/collage-2.jpg",
+    aspect: "landscape",
+    size: "2.4 MB",
+    photographer: "Pro-Night Media"
   },
   {
     id: "photo-03",
-    title: "Center Court Tennis — Baseline Rally Under Lights",
-    category: "Tennis",
-    day: 3,
-    date: "Jan 24, 2027",
-    image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1000&q=80",
+    title: "Hardwood Basketball 5x5 — Tip-Off Showdown",
+    category: "Basketball",
+    day: 2,
+    date: "Jan 23, 2027",
+    image: "/assets/events/basketball.jpg",
     aspect: "landscape",
     size: "1.9 MB",
-    photographer: "Kuru Media Wing"
+    photographer: "Athlete Capture Crew"
   },
   {
     id: "photo-04",
-    title: "Amphitheater Battle of the Bands — Mainstage Spectacle",
+    title: "Western Group Dance — Crew Choreography Finale",
     category: "Culturals",
     day: 3,
     date: "Jan 24, 2027",
-    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/events/dance-western.jpg",
     aspect: "landscape",
-    size: "4.2 MB",
+    size: "3.2 MB",
     photographer: "Pro-Night Media"
   },
   {
     id: "photo-05",
-    title: "400m Track Sprint — Photo-Finish Heats",
+    title: "FLAME Hill Run 5K & Track Sprints",
     category: "Athletics",
-    day: 1,
-    date: "Jan 22, 2027",
-    image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80",
-    aspect: "portrait",
+    day: 4,
+    date: "Jan 25, 2027",
+    image: "/assets/events/5k-run.jpg",
+    aspect: "landscape",
     size: "2.8 MB",
     photographer: "Track & Field Bureau"
   },
   {
     id: "photo-06",
-    title: "Kalakaar Katta — Acoustic Sessions Under Lights",
-    category: "Culturals",
-    day: 2,
-    date: "Jan 23, 2027",
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80",
+    title: "Center Court Tennis — Baseline Rally",
+    category: "Tennis",
+    day: 3,
+    date: "Jan 24, 2027",
+    image: "/assets/events/tennis.jpg",
     aspect: "landscape",
     size: "2.1 MB",
-    photographer: "Kuru Arts Team"
+    photographer: "Kuru Media Wing"
   },
   {
     id: "photo-07",
-    title: "Fashion Promenade — Avant-Garde Runway Showcase",
-    category: "Culturals",
-    day: 4,
-    date: "Jan 25, 2027",
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80",
-    aspect: "portrait",
-    size: "3.6 MB",
-    photographer: "Design Media Desk"
+    title: "Volleyball Championship — Outdoor Floodlit Court",
+    category: "Football",
+    day: 3,
+    date: "Jan 24, 2027",
+    image: "/assets/events/volleyball.jpg",
+    aspect: "landscape",
+    size: "2.5 MB",
+    photographer: "Court Photographer"
   },
   {
     id: "photo-08",
-    title: "Badminton Masters — Indoor Arena Finals",
+    title: "Badminton Masters — Indoor Synthetic Arena",
     category: "Badminton",
     day: 2,
     date: "Jan 23, 2027",
-    image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1000&q=80",
+    image: "/assets/events/badminton.jpg",
     aspect: "landscape",
-    size: "1.7 MB",
+    size: "1.9 MB",
     photographer: "Court Photographer"
   },
   {
     id: "photo-09",
-    title: "Aquatic Center — 50m Butterfly Championship",
+    title: "Olympic 50m Pool — Swimming Gala Finals",
     category: "Athletics",
     day: 5,
     date: "Jan 26, 2027",
-    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1000&q=80",
+    image: "/assets/events/swimming.jpg",
     aspect: "landscape",
-    size: "3.8 MB",
-    photographer: "Ceremonies Wing"
+    size: "3.1 MB",
+    photographer: "Aquatic Media Desk"
   },
   {
     id: "photo-10",
-    title: "Volleyball Spike Cup — Outdoor Arena Action",
+    title: "Cricket Oval — Leather Ball T20 Showdown",
     category: "Football",
     day: 4,
     date: "Jan 25, 2027",
-    image: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=1000&q=80",
+    image: "/assets/events/cricket.jpg",
     aspect: "landscape",
-    size: "4.5 MB",
+    size: "3.2 MB",
     photographer: "Kuru Media Wing"
+  },
+  {
+    id: "photo-11",
+    title: "Indian Classical & Folk Dance Showcase",
+    category: "Culturals",
+    day: 2,
+    date: "Jan 23, 2027",
+    image: "/assets/events/dance-indian.jpg",
+    aspect: "landscape",
+    size: "2.7 MB",
+    photographer: "Kuru Arts Team"
+  },
+  {
+    id: "photo-12",
+    title: "Ultimate Frisbee Mixed Open — Arjuna Turf",
+    category: "Athletics",
+    day: 2,
+    date: "Jan 23, 2027",
+    image: "/assets/events/frisbee.jpg",
+    aspect: "landscape",
+    size: "2.3 MB",
+    photographer: "Kuru Media Wing"
+  },
+  {
+    id: "photo-13",
+    title: "Kurukshetra Moments — Campus Arena Highlights",
+    category: "Culturals",
+    day: 1,
+    date: "Jan 22, 2027",
+    image: "/assets/collage/collage-1.jpg",
+    aspect: "landscape",
+    size: "1.8 MB",
+    photographer: "Kuru Media Wing"
+  },
+  {
+    id: "photo-14",
+    title: "Track & Field — Sprint Finish Line",
+    category: "Athletics",
+    day: 1,
+    date: "Jan 22, 2027",
+    image: "/assets/collage/collage-3.jpg",
+    aspect: "landscape",
+    size: "1.9 MB",
+    photographer: "Track & Field Bureau"
+  },
+  {
+    id: "photo-15",
+    title: "Evening Stage & Crowd Energy",
+    category: "Culturals",
+    day: 3,
+    date: "Jan 24, 2027",
+    image: "/assets/collage/collage-6.jpg",
+    aspect: "landscape",
+    size: "2.6 MB",
+    photographer: "Pro-Night Media"
   }
 ];
 
@@ -902,7 +1185,7 @@ export const TICKER_MATCHUPS = [
   },
   {
     id: "m-4",
-    sport: "Cricket T20",
+    sport: "Cricket",
     stage: "Super 8",
     status: "16.2 Ov",
     isLive: true,

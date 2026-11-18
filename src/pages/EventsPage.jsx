@@ -78,7 +78,7 @@ export default function EventsPage() {
       ===================================================================== */}
       <section className="relative h-[300px] sm:h-[360px] w-full flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1800&q=80"
+          src="/assets/events/basketball.jpg"
           alt="FLAME Kurukshetra Events"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import CustomCursor from './components/CustomCursor';
 
 import HomePage from './pages/HomePage';
 import EventsPage from './pages/EventsPage';
@@ -23,12 +24,8 @@ import {
 } from './data/liveEventsData';
 
 export default function App() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('kuru-theme') || 'dark';
-    }
-    return 'dark';
-  });
+  // Locked to dark mode only as requested
+  const [theme] = useState('dark');
 
   // Default opens in Viewer's View (isAdmin = false)
   const [isAdmin, setIsAdmin] = useState(false);
@@ -40,19 +37,12 @@ export default function App() {
 
   useEffect(() => {
     const root = document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-      root.classList.remove('light');
-    } else {
-      root.classList.add('light');
-      root.classList.remove('dark');
-    }
-    localStorage.setItem('kuru-theme', theme);
-  }, [theme]);
+    root.classList.add('dark');
+    root.classList.remove('light');
+    localStorage.setItem('kuru-theme', 'dark');
+  }, []);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
+  const toggleTheme = () => {};
 
   const toggleAdminRole = () => {
     setIsAdmin((prev) => !prev);
@@ -147,7 +137,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-[#FAF9F6] text-zinc-900 dark:bg-[var(--color-primary-black)] dark:text-[var(--color-primary-white)] flex flex-col selection:bg-[var(--color-primary-flame)] selection:text-white transition-colors duration-300">
+      <CustomCursor />
+      <div className="min-h-screen bg-[#09090B] text-white flex flex-col selection:bg-[var(--color-primary-flame)] selection:text-white transition-colors duration-300">
         <Navbar
           theme={theme}
           onToggleTheme={toggleTheme}

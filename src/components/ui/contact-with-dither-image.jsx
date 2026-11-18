@@ -538,20 +538,10 @@ export function ContactWithDitherImage({
                       <button
                         type="button"
                         onClick={handleReset}
-                        className="bg-black text-white px-3.5 py-2 font-pixel text-xs uppercase tracking-wider"
+                        className="bg-black text-white px-4 py-2 font-pixel text-xs uppercase tracking-wider"
                       >
                         Send Another
                       </button>
-                      <a
-                        href={`mailto:kurukshetra@flame.edu.in?subject=${encodeURIComponent(
-                          `[KURU '27] ${formData.category} - ${formData.college}`
-                        )}&body=${encodeURIComponent(
-                          `Hi FLAME Kurukshetra Team,\n\n${formData.message}\n\nRegards,\n${formData.name}\n${formData.college}\nPhone: ${formData.phone}`
-                        )}`}
-                        className="bg-[var(--color-primary-flame)] text-white px-3.5 py-2 font-pixel text-xs uppercase tracking-wider border border-black"
-                      >
-                        Open Mail App
-                      </a>
                     </div>
                   </motion.div>
                 )}
@@ -562,11 +552,10 @@ export function ContactWithDitherImage({
             <div className="mt-3.5 sm:mt-7 flex flex-col items-center gap-2.5 sm:gap-4 w-full px-1">
               <div className="flex items-center justify-center gap-2 text-zinc-800 dark:text-white/90 text-center">
                 <span className="font-handwriting text-xl sm:text-3xl tracking-wide text-zinc-900 dark:text-white">
-                  Registrations open for{' '}
+                  Registrations are{' '}
                   <span className="text-[var(--color-primary-flame)] font-bold">
-                    60+ colleges
-                  </span>{' '}
-                  across India!
+                    open
+                  </span>
                 </span>
               </div>
 

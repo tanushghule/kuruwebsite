@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Radio, ArrowUpRight } from 'lucide-react';
+import { FileText, ArrowUpRight } from 'lucide-react';
 import KurukshetraLogo from './KurukshetraLogo';
 
 export default function Footer() {
@@ -19,9 +19,9 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-white/40">EST. 2012</span>
+            <span className="text-white/40">EST. 2008</span>
             <span className="text-[var(--color-primary-flame)]">•</span>
-            <span>WESTERN INDIA&apos;S PREMIER COLLEGIATE FEST</span>
+            <span>19TH EDITION • PREMIER COLLEGIATE FEST</span>
           </div>
         </div>
       </div>
@@ -33,10 +33,10 @@ export default function Footer() {
           <div className="lg:col-span-2 flex flex-col gap-4">
             <Link to="/" className="flex items-center gap-3.5 group">
               <div className="relative flex shrink-0 items-center justify-center rounded-full transition-transform group-hover:scale-105">
-                <KurukshetraLogo className="h-14 w-14" />
+                <KurukshetraLogo className="h-12 w-12 sm:h-14 sm:w-14" />
               </div>
               <div className="flex flex-col">
-                <span className="font-horizon text-lg sm:text-xl font-black uppercase text-white tracking-wider whitespace-nowrap">
+                <span className="font-horizon text-base sm:text-xl font-black uppercase text-white tracking-wider whitespace-nowrap">
                   FLAME <span className="text-[var(--color-primary-flame)]">KURUKSHETRA</span>
                 </span>
                 <span className="text-xs uppercase tracking-[0.2em] text-white/55 font-medium">
@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-white/65 leading-relaxed max-w-sm font-normal">
-              The ultimate multi-disciplinary collegiate sports, cultural, and management events battleground. Over 50+ universities, 2,500+ athletes, and ₹10L+ in cash prizes across five intense championship days.
+              India&apos;s premier multi-disciplinary collegiate sports, cultural, and management events conclave. Over 50+ universities, 8,500+ collegiate athletes, and ₹10L+ in cash prizes across five intense championship days.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -58,13 +58,6 @@ export default function Footer() {
                 <FileText className="w-3.5 h-3.5 text-[var(--color-primary-flame)]" />
                 <span>DOWNLOAD BROCHURE</span>
               </a>
-              <Link
-                to="/live-events"
-                className="inline-flex items-center gap-2 rounded-lg bg-[var(--color-primary-flame)]/20 border border-[var(--color-primary-flame)]/40 hover:bg-[var(--color-primary-flame)]/30 px-3.5 py-2 text-xs text-[var(--color-primary-flame)] transition font-bold"
-              >
-                <Radio className="w-3.5 h-3.5" />
-                <span>LIVE ARENA</span>
-              </Link>
             </div>
           </div>
 
@@ -85,17 +78,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/schedule" className="text-white/70 hover:text-white transition flex items-center justify-between">
-                  <span>Tournament Schedule</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/live-events" className="text-white/70 hover:text-white transition flex items-center justify-between">
-                  <span>Live Scores &amp; Tally</span>
-                  <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-primary-flame)]" />
-                </Link>
-              </li>
-              <li>
                 <Link to="/register" className="hover:text-white transition flex items-center justify-between font-bold text-[var(--color-primary-flame)]">
                   <span>Register Contingent</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -107,17 +89,12 @@ export default function Footer() {
           {/* Nav Links Column 2: Archive & Community */}
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-extrabold uppercase tracking-wider text-[var(--color-primary-flame)]">
-              People &amp; Media
+              Festival Hub
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
                 <Link to="/committee" className="text-white/70 hover:text-white transition">
                   Meet the OC
-                </Link>
-              </li>
-              <li>
-                <Link to="/album" className="text-white/70 hover:text-white transition">
-                  Photo Vault &amp; Memories
                 </Link>
               </li>
               <li>
@@ -181,7 +158,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <div>
-            © 2027 FLAME University Kurukshetra. All Rights Reserved.
+            © 2027 FLAME University Kurukshetra (EST. 2008). All Rights Reserved.
           </div>
           <div className="flex items-center gap-6">
             <span>FLAME UNIVERSITY CAMPUS • 22ND–26TH JANUARY 2027</span>

@@ -7,65 +7,52 @@
  */
 
 // =========================================================================
-// 1A. FACULTY ADVISORS (First Row on Meet the OC — Page 11)
+// 1A. FACULTY ADVISORS (First Row on Meet the OC — Center Card Elevated)
 // =========================================================================
 export const FACULTY_ADVISORS = [
   {
     id: "ADV-01",
-    name: "Farrokh Sir",
-    role: "Faculty Advisor",
+    name: "Dr. Vahideh Razmi",
+    role: "",
     tier: "advisor",
     wing: "advisor",
-    photo: "/assets/heads/ec-president.jpg",
-    idBadge: "FACULTY ADVISOR",
-    oneLiner: "Guiding the institutional vision, athletic excellence, and foundational values of FLAME Kurukshetra.",
-    wingLabel: "Faculty Advisory Board",
+    photo: "/assets/heads/cc-logistics.jpg",
+    idBadge: "",
+    oneLiner: "",
+    wingLabel: "",
     email: "kurukshetra@flame.edu.in"
   },
   {
     id: "ADV-02",
-    name: "Razmi Ma'am",
-    role: "Faculty Advisor",
+    name: "Dr. Mahdi Farrokh",
+    role: "",
     tier: "advisor",
     wing: "advisor",
-    photo: "/assets/heads/cc-logistics.jpg",
-    idBadge: "FACULTY ADVISOR",
-    oneLiner: "Mentoring the student secretariat across cultural programming, campus operations, and student governance.",
-    wingLabel: "Faculty Advisory Board",
+    photo: "/assets/heads/ec-president.jpg",
+    idBadge: "",
+    oneLiner: "",
+    wingLabel: "",
+    isCenterElevated: true,
     email: "kurukshetra@flame.edu.in"
   },
   {
     id: "ADV-03",
-    name: "Tamosi Ma'am",
-    role: "Faculty Advisor",
+    name: "Ms. Tamosi Sarkar",
+    role: "",
     tier: "advisor",
     wing: "advisor",
     photo: "/assets/heads/cc-marketing.jpg",
-    idBadge: "FACULTY ADVISOR",
-    oneLiner: "Supporting inter-collegiate outreach, management conclaves, and academic-extracurricular synergy.",
-    wingLabel: "Faculty Advisory Board",
+    idBadge: "",
+    oneLiner: "",
+    wingLabel: "",
     email: "kurukshetra@flame.edu.in"
   }
 ];
 
 // =========================================================================
-// 1B. EXECUTIVE COUNCIL (Second Row on Meet the OC — Synced from FK 2027 OC Data)
+// 1B. EXECUTIVE COMMITTEE (Second Row on Meet the OC — Khushi Left, Ayush Center Elevated, Parthsarthi Right)
 // =========================================================================
 export const EC_MEMBERS = [
-  {
-    id: "HEAD-01",
-    name: "Ayush Kumar",
-    role: "Chairperson",
-    tier: "ec",
-    wing: "governance",
-    photo: "/assets/oc/ayush-kumar.jpg",
-    idBadge: "EXECUTIVE COUNCIL • CHAIRPERSON",
-    oneLiner: "Steering overarching institutional alignment, festival strategy, and apex leadership for Kurukshetra 2027.",
-    wingLabel: "Executive Council",
-    roleClass: "role-ec",
-    instagram: "flamekurukshetra",
-    email: "ayush.kumar@flame.edu.in"
-  },
   {
     id: "HEAD-02",
     name: "Khushi Bhatia",
@@ -73,12 +60,27 @@ export const EC_MEMBERS = [
     tier: "ec",
     wing: "governance",
     photo: "/assets/oc/khushi-bhatia.jpg",
-    idBadge: "EXECUTIVE COUNCIL • JOINT SECRETARY",
-    oneLiner: "Orchestrating council administration, inter-university delegations, and multi-wing operational convergence.",
-    wingLabel: "Executive Council",
+    idBadge: "JOINT SECRETARY",
+    oneLiner: "",
+    wingLabel: "Executive Committee",
     roleClass: "role-ec",
     instagram: "flamekurukshetra",
     email: "khushi.bhatia@flame.edu.in"
+  },
+  {
+    id: "HEAD-01",
+    name: "Ayush Kumar",
+    role: "Chairperson",
+    tier: "ec",
+    wing: "governance",
+    photo: "/assets/oc/ayush-kumar.jpg",
+    idBadge: "CHAIRPERSON",
+    oneLiner: "",
+    wingLabel: "Executive Committee",
+    roleClass: "role-ec",
+    isCenterElevated: true,
+    instagram: "flamekurukshetra",
+    email: "ayush.kumar@flame.edu.in"
   },
   {
     id: "HEAD-03",
@@ -86,10 +88,10 @@ export const EC_MEMBERS = [
     role: "Joint Secretary",
     tier: "ec",
     wing: "governance",
-    photo: "/assets/heads/ec-secretary.jpg",
-    idBadge: "EXECUTIVE COUNCIL • JOINT SECRETARY",
-    oneLiner: "Managing regulatory compliance, senate approvals, and grievance resolution frameworks across contingents.",
-    wingLabel: "Executive Council",
+    photo: "/assets/oc/parthsarthi-goyal.jpg",
+    idBadge: "JOINT SECRETARY",
+    oneLiner: "",
+    wingLabel: "Executive Committee",
     roleClass: "role-ec",
     instagram: "flamekurukshetra",
     email: "parthsarthi.goyal@flame.edu.in"
@@ -134,7 +136,7 @@ export const CC_HEADS = [
     role: "Co-Head PR",
     tier: "cc",
     wing: "pr",
-    photo: "/assets/heads/cc-marketing.jpg",
+    photo: "/assets/oc/mishti-gupta.jpg",
     idBadge: "CO-HEAD PR",
     oneLiner: "Spearheading national press outreach, external media relations, and public communications across university networks.",
     wingLabel: "PR Team",
@@ -467,7 +469,7 @@ export const SCHEDULE_EVENTS = [
     format: "Strategic Auction & Resource Bidding (Team Size: 2)",
     desc: "High-stakes live bidding war where valuation instincts, budget management, and game theory determine the winning franchise.",
     prize: "Championship Trophy + Cash Prize",
-    image: "/assets/events/case-conquest.jpg"
+    image: "/assets/events/battle-of-bids.jpg"
   },
   {
     id: "mun",
@@ -481,7 +483,7 @@ export const SCHEDULE_EVENTS = [
     format: "Parliamentary Diplomacy & Policy Debate (Team Size: 1)",
     desc: "Debate global geopolitical crises, draft resolutions, and forge diplomatic coalitions in the Kurukshetra MUN.",
     prize: "Best Delegate Gavel + Cash Prize",
-    image: "/assets/events/management.jpg"
+    image: "/assets/events/mun.jpg"
   },
   {
     id: "article-writing",
@@ -495,7 +497,7 @@ export const SCHEDULE_EVENTS = [
     format: "Business & Economic Editorial Writing (Team Size: 1)",
     desc: "Craft incisive analytical articles on contemporary financial, economic, and management paradigms.",
     prize: "Publication + Cash Prize",
-    image: "/assets/events/case-conquest.jpg"
+    image: "/assets/events/article-writing.jpg"
   },
 
   // ================= SPORTS EVENTS =================
@@ -881,7 +883,7 @@ At Kurukshetra, matches that go into extra time demand peak aerobic fitness. Tea
     date: 'Jan 02, 2027',
     readTime: '6 min read',
     author: 'Ayush Kumar',
-    role: 'Chairperson, Executive Council',
+    role: 'Chairperson, Executive Committee',
     avatar: '/assets/oc/ayush-kumar.jpg',
     image: '/assets/collage/collage-1.jpg',
     excerpt: 'An inspiring reflection on what makes FLAME Kurukshetra the gold standard of collegiate festivals in India: unmatched sportsmanship, cultural passion, and lifelong memories.',

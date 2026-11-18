@@ -82,7 +82,7 @@ export const EC_MEMBERS = [
   },
   {
     id: "HEAD-03",
-    name: "General Secretary",
+    name: "Ayush",
     role: "General Secretary",
     tier: "ec",
     wing: "governance",
@@ -381,6 +381,20 @@ export const SCHEDULE_EVENTS = [
   },
 
   // --- SPORTS EVENTS ---
+  {
+    id: "inferno",
+    name: "Inferno",
+    category: "sports",
+    categoryLabel: "SPORTS EVENTS",
+    days: [2, 3],
+    datesText: "January 23 – 24, 2027",
+    timing: "07:00 AM – 12:00 PM",
+    venue: "FLAME Athletic Track & Endurance Arena",
+    format: "Functional Fitness & Endurance Race",
+    desc: "Push your physical limits in Inferno—FLAME Kurukshetra's flagship high-intensity functional fitness and endurance race combining running and workout stations.",
+    prize: "₹1,30,000 + Inferno Trophy",
+    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80"
+  },
   {
     id: "yoga",
     name: "Yoga",
